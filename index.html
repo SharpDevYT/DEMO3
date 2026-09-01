@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LegacyFitness — Premium Gym in Shahdara, Delhi | लेगिसी फिटनेस</title>
+<meta name="description" content="LegacyFitness (लेगिसी फिटनेस) — Shahdara's premium yet affordable gym. Advanced machines, certified male & female trainers, dedicated cardio floor. Rated 4.3 by 115 members. A-82 Jagat Puri Chowk, Delhi 110032.">
+<meta name="theme-color" content="#09090b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+  :root{
+    --amber:#fbbf24;
+    --ink:#09090b;
+    --bone:#edeae4;
+  }
+  html{background:var(--ink)}
+  body{font-family:'Archivo',ui-sans-serif,system-ui,sans-serif;background:var(--ink)}
+  .font-display{font-family:'Anton',sans-serif;letter-spacing:.01em}
+  .font-mono2{font-family:'JetBrains Mono',monospace}
+  ::selection{background:var(--amber);color:#000}
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:#0c0c0e}
+  ::-webkit-scrollbar-thumb{background:#26262b;border-radius:8px;border:2px solid #0c0c0e}
+  ::-webkit-scrollbar-thumb:hover{background:var(--amber)}
+  .bg-grid{
+    background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+    background-size:54px 54px;
+  }
+  .grid-fade{mask-image:radial-gradient(ellipse 90% 80% at 50% 30%,#000 40%,transparent 100%)}
+  .text-stroke{
+    -webkit-text-stroke:1.5px rgba(237,234,228,.9);
+    color:transparent;
+  }
+  @media (min-width:1024px){.text-stroke{-webkit-text-stroke:2px rgba(237,234,228,.9)}}
+  .hazard{background-image:repeating-linear-gradient(-45deg,var(--amber) 0 10px,#0a0a0b 10px 20px)}
+  .glass{background:rgba(255,255,255,.04);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.09)}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .animate-marquee{animation:marquee 32s linear infinite}
+  .marquee-band:hover .animate-marquee{animation-play-state:paused}
+  @keyframes pulse-ring{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.9);opacity:0}}
+  .fab-ring{animation:pulse-ring 1.8s cubic-bezier(.2,.6,.3,1) infinite}
+  .reveal{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+  .reveal.in{opacity:1;transform:translateY(0)}
+  .reveal-d1{transition-delay:.08s}.reveal-d2{transition-delay:.16s}.reveal-d3{transition-delay:.24s}.reveal-d4{transition-delay:.32s}
+  .nav-link{position:relative}
+  .nav-link::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--amber);transition:width .35s cubic-bezier(.22,1,.36,1)}
+  .nav-link:hover::after{width:100%}
+  #site-nav.scrolled{box-shadow:0 12px 40px -18px rgba(0,0,0,.9);background:rgba(9,9,11,.86)}
+  .card-lift{transition:transform .5s cubic-bezier(.22,1,.36,1),border-color .4s,box-shadow .5s}
+  .card-lift:hover{transform:translateY(-8px);border-color:rgba(251,191,36,.45);box-shadow:0 30px 60px -30px rgba(251,191,36,.25)}
+  .card-lift img{transition:transform .8s cubic-bezier(.22,1,.36,1),filter .5s}
+  .card-lift:hover img{transform:scale(1.06)}
+  .map-dark{filter:grayscale(1) invert(.92) hue-rotate(180deg) contrast(.92) brightness(.9)}
+  input,select,textarea{outline:none}
+  .field{background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.12);transition:border-color .3s,box-shadow .3s}
+  .field:focus{border-color:var(--amber);box-shadow:0 0 0 3px rgba(251,191,36,.15)}
+  select option{background:#141416;color:#edeae4}
+  .field-error{border-color:#ef4444 !important;animation:shake .35s}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+  .noise{position:fixed;inset:0;z-index:70;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E")}
+  .diamond{width:8px;height:8px;background:var(--amber);transform:rotate(45deg);flex-shrink:0}
+  .quote-band{background-image:url('https://images.pexels.com/photos/20418606/pexels-photo-20418606.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200')}
+  @media (min-width:1024px){.quote-band{background-attachment:fixed}}
+</style>
+</head>
+<body class="text-zinc-100 antialiased overflow-x-hidden">
+
+<div class="noise"></div>
+
+<div class="bg-amber-400 text-black">
+  <div class="max-w-7xl mx-auto px-4 h-9 flex items-center justify-center sm:justify-between gap-4 font-mono2 text-[10px] sm:text-[11px] font-medium tracking-[0.14em] uppercase">
+    <span class="flex items-center gap-2"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-black/60"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-black"></span></span>Open now · Closes 8:00 PM</span>
+    <span class="hidden md:flex items-center gap-2"><i data-lucide="star" class="w-3.5 h-3.5 fill-black"></i>4.3 rated · 115 Google reviews</span>
+    <a href="tel:+917042669192" class="hidden sm:flex items-center gap-2 hover:underline"><i data-lucide="phone" class="w-3.5 h-3.5"></i>070426 69192</a>
+  </div>
+</div>
+
+<header id="site-nav" class="sticky top-0 z-50 backdrop-blur-xl bg-[#09090b]/70 border-b border-white/5 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 h-[68px] flex items-center justify-between gap-6">
+    <a href="#top" class="flex items-center gap-3 group">
+      <span class="w-10 h-10 bg-amber-400 rounded-md grid place-items-center group-hover:rotate-[-6deg] transition-transform duration-300"><i data-lucide="dumbbell" class="w-5.5 h-5.5 text-black"></i></span>
+      <span class="leading-none">
+        <span class="font-display text-xl tracking-wide block">LEGACY<span class="text-amber-400">FITNESS</span></span>
+        <span class="font-mono2 text-[9px] tracking-[0.3em] text-zinc-500 uppercase block mt-1">लेगिसी फिटनेस · Shahdara</span>
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-9 font-mono2 text-[11px] tracking-[0.2em] uppercase text-zinc-400">
+      <a href="#services" class="nav-link hover:text-zinc-100 transition-colors">Services</a>
+      <a href="#why" class="nav-link hover:text-zinc-100 transition-colors">Why Legacy</a>
+      <a href="#reviews" class="nav-link hover:text-zinc-100 transition-colors">Reviews</a>
+      <a href="#visit" class="nav-link hover:text-zinc-100 transition-colors">Visit Us</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#lead-form" class="hidden sm:inline-flex items-center gap-2 bg-amber-400 text-black font-semibold text-sm px-5 py-2.5 rounded-md hover:bg-amber-300 transition-colors">Free Trial<i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      <button id="menu-btn" class="lg:hidden w-10 h-10 grid place-items-center border border-white/10 rounded-md text-zinc-300" aria-label="Open menu"><i data-lucide="menu" class="w-5 h-5"></i></button>
+    </div>
+  </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 z-[60] bg-[#09090b]/97 backdrop-blur-2xl hidden">
+  <div class="h-full flex flex-col px-6 py-5">
+    <div class="flex items-center justify-between">
+      <span class="font-display text-xl">LEGACY<span class="text-amber-400">FITNESS</span></span>
+      <button id="menu-close" class="w-10 h-10 grid place-items-center border border-white/10 rounded-md text-zinc-300" aria-label="Close menu"><i data-lucide="x" class="w-5 h-5"></i></button>
+    </div>
+    <nav class="flex flex-col gap-2 mt-14">
+      <a href="#services" class="mob-link font-display text-5xl uppercase py-3 border-b border-white/5 hover:text-amber-400 transition-colors">Services</a>
+      <a href="#why" class="mob-link font-display text-5xl uppercase py-3 border-b border-white/5 hover:text-amber-400 transition-colors">Why Legacy</a>
+      <a href="#reviews" class="mob-link font-display text-5xl uppercase py-3 border-b border-white/5 hover:text-amber-400 transition-colors">Reviews</a>
+      <a href="#visit" class="mob-link font-display text-5xl uppercase py-3 border-b border-white/5 hover:text-amber-400 transition-colors">Visit Us</a>
+    </nav>
+    <div class="mt-auto space-y-3">
+      <a href="#lead-form" class="mob-link flex items-center justify-center gap-2 bg-amber-400 text-black font-semibold px-5 py-4 rounded-md">Claim Free Trial<i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      <a href="tel:+917042669192" class="flex items-center justify-center gap-2 border border-white/15 text-zinc-200 px-5 py-4 rounded-md"><i data-lucide="phone" class="w-4 h-4 text-amber-400"></i>070426 69192</a>
+    </div>
+  </div>
+</div>
+
+<main id="top">
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://images.pexels.com/photos/19025674/pexels-photo-19025674.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Dumbbells lined up on the rack at LegacyFitness gym" class="w-full h-full object-cover opacity-25">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#09090b]/70 via-[#09090b]/80 to-[#09090b]"></div>
+    <div class="absolute inset-0 bg-grid grid-fade"></div>
+    <div class="absolute -top-32 -left-32 w-[520px] h-[520px] rounded-full bg-amber-400/12 blur-[140px]"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 pt-14 pb-20 lg:pt-24 lg:pb-28 grid lg:grid-cols-[1.12fr_0.88fr] gap-14 lg:gap-10 items-center">
+    <div>
+      <div class="reveal inline-flex items-center gap-2.5 glass rounded-full pl-2 pr-4 py-1.5 mb-8">
+        <span class="flex items-center gap-1 bg-amber-400 text-black text-xs font-bold px-2.5 py-1 rounded-full"><i data-lucide="star" class="w-3 h-3 fill-black"></i>4.3</span>
+        <span class="font-mono2 text-[10px] tracking-[0.18em] uppercase text-zinc-400">115 Google reviews · Shahdara, Delhi</span>
+      </div>
+      <h1 class="reveal font-display uppercase leading-[0.92] text-[clamp(3.4rem,10vw,7.5rem)]">
+        Train hard.<br>
+        <span class="text-stroke">Leave a</span><br>
+        Legacy<span class="text-amber-400">.</span>
+      </h1>
+      <p class="reveal reveal-d1 mt-7 max-w-xl text-zinc-400 text-base sm:text-lg leading-relaxed">
+        <span class="text-zinc-200 font-semibold">लेगिसी फिटनेस</span> — Shahdara's premium-yet-affordable gym. Advanced imported machines, a dedicated cardio floor, and internationally certified male &amp; female trainers who actually coach you.
+      </p>
+      <div class="reveal reveal-d2 mt-9 flex flex-wrap items-center gap-4">
+        <a href="#lead-form" class="group inline-flex items-center gap-3 bg-amber-400 text-black font-bold text-sm sm:text-base px-7 py-4 rounded-md hover:bg-amber-300 transition-all hover:gap-4">
+          Claim a free trial session<i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+        <a href="tel:+917042669192" class="inline-flex items-center gap-3 border border-white/15 text-zinc-200 font-semibold text-sm sm:text-base px-7 py-4 rounded-md hover:border-amber-400/60 hover:text-amber-300 transition-colors">
+          <i data-lucide="phone" class="w-4.5 h-4.5 text-amber-400"></i>070426 69192
+        </a>
+      </div>
+      <div class="reveal reveal-d3 mt-12 grid grid-cols-3 max-w-xl divide-x divide-white/10 border border-white/10 rounded-xl overflow-hidden glass">
+        <div class="p-4 sm:p-5">
+          <p class="font-display text-3xl sm:text-4xl text-amber-400"><span class="counter" data-target="4.3" data-decimals="1">0.0</span></p>
+          <p class="font-mono2 text-[9px] sm:text-[10px] tracking-[0.18em] uppercase text-zinc-500 mt-1.5">Google rating</p>
+        </div>
+        <div class="p-4 sm:p-5">
+          <p class="font-display text-3xl sm:text-4xl"><span class="counter" data-target="115" data-decimals="0">0</span>+</p>
+          <p class="font-mono2 text-[9px] sm:text-[10px] tracking-[0.18em] uppercase text-zinc-500 mt-1.5">Verified reviews</p>
+        </div>
+        <div class="p-4 sm:p-5">
+          <p class="font-display text-3xl sm:text-4xl">M<span class="text-amber-400">+</span>F</p>
+          <p class="font-mono2 text-[9px] sm:text-[10px] tracking-[0.18em] uppercase text-zinc-500 mt-1.5">Certified trainers</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="lead-form" class="reveal reveal-d2 scroll-mt-32">
+      <div class="glass rounded-2xl shadow-2xl shadow-black/60 overflow-hidden">
+        <div class="hazard h-2"></div>
+        <div class="p-7 sm:p-9">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <h2 class="font-display text-2xl sm:text-3xl uppercase leading-tight">Start with a<br><span class="text-amber-400">free session</span></h2>
+              <p class="text-zinc-400 text-sm mt-3 leading-relaxed">Fill this in — we reply on WhatsApp within minutes with plans &amp; your trial slot.</p>
+            </div>
+            <span class="w-11 h-11 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/30 grid place-items-center"><i data-lucide="message-circle" class="w-5.5 h-5.5 text-amber-400"></i></span>
+          </div>
+          <form id="wa-form" class="mt-7 space-y-4" novalidate>
+            <div>
+              <label for="f-name" class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500 block mb-2">Your name</label>
+              <input id="f-name" type="text" placeholder="e.g. Rohit Sharma" autocomplete="name" class="field w-full rounded-lg px-4 py-3.5 text-sm text-zinc-100 placeholder:text-zinc-600">
+            </div>
+            <div>
+              <label for="f-phone" class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500 block mb-2">Phone / WhatsApp number</label>
+              <div class="flex">
+                <span class="field rounded-l-lg border-r-0 px-4 py-3.5 text-sm text-zinc-400 font-mono2">+91</span>
+                <input id="f-phone" type="tel" inputmode="numeric" placeholder="70426 69192" autocomplete="tel" class="field w-full rounded-r-lg rounded-l-none px-4 py-3.5 text-sm text-zinc-100 placeholder:text-zinc-600">
+              </div>
+            </div>
+            <div>
+              <label for="f-service" class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500 block mb-2">I'm interested in</label>
+              <div class="relative">
+                <select id="f-service" class="field w-full appearance-none rounded-lg px-4 py-3.5 text-sm text-zinc-100 pr-11">
+                  <option>Gym Membership</option>
+                  <option>Personal Training</option>
+                  <option>Cardio &amp; Weight Loss</option>
+                  <option selected>Free Trial Session</option>
+                </select>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-zinc-500 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+              </div>
+            </div>
+            <p id="form-error" class="hidden text-red-400 text-xs font-mono2 tracking-wide"></p>
+            <button type="submit" class="group w-full inline-flex items-center justify-center gap-3 bg-amber-400 text-black font-bold text-base px-6 py-4 rounded-lg hover:bg-amber-300 transition-all">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>Send on WhatsApp<i data-lucide="arrow-up-right" class="w-4 h-4 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all"></i>
+            </button>
+            <p class="flex items-center justify-center gap-2 text-[11px] text-zinc-500 pt-1"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-400/80"></i>No spam. One WhatsApp message, that's it.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-band border-y border-white/5 bg-[#0c0c0e] py-5 overflow-hidden select-none">
+  <div class="animate-marquee flex w-max items-center gap-10 pr-10">
+    <div class="flex items-center gap-10 shrink-0">
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap">Strength</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap text-stroke">Cardio</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap">Personal Training</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap text-stroke">Sanitized Daily</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap">Certified Coaches</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap text-stroke">Honest Pricing</span><span class="diamond"></span>
+    </div>
+    <div class="flex items-center gap-10 shrink-0">
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap">Strength</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap text-stroke">Cardio</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap">Personal Training</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap text-stroke">Sanitized Daily</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap">Certified Coaches</span><span class="diamond"></span>
+      <span class="font-display text-2xl sm:text-3xl uppercase whitespace-nowrap text-stroke">Honest Pricing</span><span class="diamond"></span>
+    </div>
+  </div>
+</div>
+
+<section id="services" class="relative scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-4 py-20 lg:py-28">
+    <div class="reveal flex items-center gap-4 mb-6">
+      <span class="hazard h-1.5 w-14 rounded-full"></span>
+      <span class="font-mono2 text-[11px] tracking-[0.3em] uppercase text-amber-400">01 · What we do</span>
+    </div>
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-14">
+      <h2 class="reveal font-display uppercase text-[clamp(2.6rem,6vw,4.8rem)] leading-[0.95]">Train <span class="text-stroke">your</span> way<span class="text-amber-400">.</span></h2>
+      <p class="reveal reveal-d1 max-w-sm text-zinc-400 text-sm leading-relaxed">Three floors of purpose-built training — pick a zone, or let a coach build your split around all of them.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="reveal card-lift glass rounded-2xl overflow-hidden group">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Advanced strength machines and dumbbell rack" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0c0c0e] via-transparent to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono2 text-[10px] tracking-[0.25em] bg-black/60 backdrop-blur border border-white/15 text-amber-400 px-3 py-1.5 rounded-full uppercase">Zone 01</span>
+        </div>
+        <div class="p-7">
+          <div class="flex items-center justify-between">
+            <h3 class="font-display text-2xl uppercase">Strength &amp; Machines</h3>
+            <span class="w-10 h-10 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="dumbbell" class="w-5 h-5 text-amber-400"></i></span>
+          </div>
+          <p class="text-zinc-400 text-sm mt-3 leading-relaxed">Advanced imported machines and a full free-weight line — every station maintained daily, zero waiting chaos.</p>
+          <ul class="mt-5 space-y-2.5 text-sm text-zinc-300">
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Latest imported equipment</li>
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Full dumbbell &amp; plate range</li>
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Form correction on the floor</li>
+          </ul>
+          <a href="#" data-wa-service="Strength &amp; Machines" class="wa-service mt-6 inline-flex items-center gap-2 font-mono2 text-[11px] tracking-[0.2em] uppercase text-amber-400 hover:gap-3.5 transition-all">Ask on WhatsApp<i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+        </div>
+      </article>
+
+      <article class="reveal reveal-d1 card-lift glass rounded-2xl overflow-hidden group">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.pexels.com/photos/7031705/pexels-photo-7031705.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Spacious separate cardio floor with treadmills and cycles" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0c0c0e] via-transparent to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono2 text-[10px] tracking-[0.25em] bg-black/60 backdrop-blur border border-white/15 text-amber-400 px-3 py-1.5 rounded-full uppercase">Zone 02</span>
+        </div>
+        <div class="p-7">
+          <div class="flex items-center justify-between">
+            <h3 class="font-display text-2xl uppercase">Cardio Zone</h3>
+            <span class="w-10 h-10 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="heart-pulse" class="w-5 h-5 text-amber-400"></i></span>
+          </div>
+          <p class="text-zinc-400 text-sm mt-3 leading-relaxed">A separate, spacious cardio floor — treadmills, cycles and cross trainers away from the lifting crowd.</p>
+          <ul class="mt-5 space-y-2.5 text-sm text-zinc-300">
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Dedicated cardio space</li>
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Weight-loss programs</li>
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Spacious, never cramped</li>
+          </ul>
+          <a href="#" data-wa-service="Cardio Zone" class="wa-service mt-6 inline-flex items-center gap-2 font-mono2 text-[11px] tracking-[0.2em] uppercase text-amber-400 hover:gap-3.5 transition-all">Ask on WhatsApp<i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+        </div>
+      </article>
+
+      <article class="reveal reveal-d2 card-lift glass rounded-2xl overflow-hidden group">
+        <div class="relative h-56 overflow-hidden">
+          <img src="https://images.pexels.com/photos/4853280/pexels-photo-4853280.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Certified trainer coaching a member through a deadlift" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0c0c0e] via-transparent to-transparent"></div>
+          <span class="absolute top-4 left-4 font-mono2 text-[10px] tracking-[0.25em] bg-black/60 backdrop-blur border border-white/15 text-amber-400 px-3 py-1.5 rounded-full uppercase">Zone 03</span>
+        </div>
+        <div class="p-7">
+          <div class="flex items-center justify-between">
+            <h3 class="font-display text-2xl uppercase">Personal Training</h3>
+            <span class="w-10 h-10 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="user-check" class="w-5 h-5 text-amber-400"></i></span>
+          </div>
+          <p class="text-zinc-400 text-sm mt-3 leading-relaxed">1-on-1 coaching from internationally certified male &amp; female trainers — program, diet and accountability.</p>
+          <ul class="mt-5 space-y-2.5 text-sm text-zinc-300">
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Male &amp; female coaches</li>
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Custom diet &amp; split plans</li>
+            <li class="flex items-center gap-2.5"><i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0"></i>Progress tracked weekly</li>
+          </ul>
+          <a href="#" data-wa-service="Personal Training" class="wa-service mt-6 inline-flex items-center gap-2 font-mono2 text-[11px] tracking-[0.2em] uppercase text-amber-400 hover:gap-3.5 transition-all">Ask on WhatsApp<i data-lucide="arrow-up-right" class="w-4 h-4"></i></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="relative border-t border-white/5 bg-[#0b0b0d] scroll-mt-24">
+  <div class="absolute inset-0 bg-grid opacity-60 grid-fade"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
+    <div class="reveal flex items-center gap-4 mb-6">
+      <span class="hazard h-1.5 w-14 rounded-full"></span>
+      <span class="font-mono2 text-[11px] tracking-[0.3em] uppercase text-amber-400">02 · Why Legacy</span>
+    </div>
+    <h2 class="reveal font-display uppercase text-[clamp(2.6rem,6vw,4.8rem)] leading-[0.95] mb-14">Built <span class="text-stroke">different</span><span class="text-amber-400">.</span></h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="reveal card-lift glass rounded-2xl p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 rounded-xl bg-amber-400 grid place-items-center"><i data-lucide="dumbbell" class="w-6 h-6 text-black"></i></span>
+          <span class="font-mono2 text-xs text-zinc-600">/01</span>
+        </div>
+        <h3 class="font-display text-xl uppercase mt-6">Advanced Machines</h3>
+        <p class="text-zinc-400 text-sm mt-3 leading-relaxed">Latest imported equipment across every station — reviewers call our machines "perfect and advanced" for a reason.</p>
+      </div>
+      <div class="reveal reveal-d1 card-lift glass rounded-2xl p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 rounded-xl bg-amber-400 grid place-items-center"><i data-lucide="badge-check" class="w-6 h-6 text-black"></i></span>
+          <span class="font-mono2 text-xs text-zinc-600">/02</span>
+        </div>
+        <h3 class="font-display text-xl uppercase mt-6">Certified Trainers</h3>
+        <p class="text-zinc-400 text-sm mt-3 leading-relaxed">Internationally certified male &amp; female trainers on the floor — real coaching, not just supervision.</p>
+      </div>
+      <div class="reveal reveal-d2 card-lift glass rounded-2xl p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 rounded-xl bg-amber-400 grid place-items-center"><i data-lucide="shield-check" class="w-6 h-6 text-black"></i></span>
+          <span class="font-mono2 text-xs text-zinc-600">/03</span>
+        </div>
+        <h3 class="font-display text-xl uppercase mt-6">Hygiene First</h3>
+        <p class="text-zinc-400 text-sm mt-3 leading-relaxed">Tight sanitization checks, temperature screening and clean lockers — a spotless floor, every single day.</p>
+      </div>
+      <div class="reveal reveal-d3 card-lift glass rounded-2xl p-7">
+        <div class="flex items-center justify-between">
+          <span class="w-12 h-12 rounded-xl bg-amber-400 grid place-items-center"><i data-lucide="indian-rupee" class="w-6 h-6 text-black"></i></span>
+          <span class="font-mono2 text-xs text-zinc-600">/04</span>
+        </div>
+        <h3 class="font-display text-xl uppercase mt-6">Honest Pricing</h3>
+        <p class="text-zinc-400 text-sm mt-3 leading-relaxed">A genuinely premium facility at neighbourhood prices — luxury and affordable, as our members put it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-band relative bg-cover bg-center">
+  <div class="absolute inset-0 bg-[#09090b]/82"></div>
+  <div class="relative max-w-5xl mx-auto px-4 py-24 lg:py-32 text-center">
+    <i data-lucide="quote" class="reveal w-10 h-10 text-amber-400 mx-auto fill-amber-400/20"></i>
+    <p class="reveal reveal-d1 font-display uppercase text-[clamp(1.8rem,4.5vw,3.4rem)] leading-tight mt-6">"A very nice, clean, spacious and <span class="text-amber-400">premium gym</span> in this area. All the machines are perfect and advanced."</p>
+    <p class="reveal reveal-d2 font-mono2 text-[11px] tracking-[0.28em] uppercase text-zinc-400 mt-7">— Anant · Local Guide, 283 photos on Google</p>
+  </div>
+</section>
+
+<section id="reviews" class="relative border-t border-white/5 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-4 py-20 lg:py-28">
+    <div class="reveal flex items-center gap-4 mb-6">
+      <span class="hazard h-1.5 w-14 rounded-full"></span>
+      <span class="font-mono2 text-[11px] tracking-[0.3em] uppercase text-amber-400">03 · Social proof</span>
+    </div>
+    <h2 class="reveal font-display uppercase text-[clamp(2.6rem,6vw,4.8rem)] leading-[0.95] mb-14">What <span class="text-stroke">Shahdara</span> says<span class="text-amber-400">.</span></h2>
+
+    <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-6 items-start">
+      <div class="reveal glass rounded-2xl p-8 lg:sticky lg:top-24">
+        <div class="flex items-end gap-5">
+          <p class="font-display text-7xl sm:text-8xl leading-none text-amber-400">4.3</p>
+          <div class="pb-2">
+            <div class="flex gap-1">
+              <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+              <i data-lucide="star" class="w-5 h-5 text-amber-400/40"></i>
+            </div>
+            <p class="font-mono2 text-[10px] tracking-[0.2em] uppercase text-zinc-500 mt-2">115 Google reviews</p>
+          </div>
+        </div>
+        <div class="mt-8 space-y-3">
+          <div class="flex items-center gap-3 text-xs font-mono2 text-zinc-500"><span class="w-3">5</span><div class="h-2 flex-1 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-amber-400 rounded-full rev-bar" style="width:0%" data-w="66%"></div></div><span class="w-6 text-right">76</span></div>
+          <div class="flex items-center gap-3 text-xs font-mono2 text-zinc-500"><span class="w-3">4</span><div class="h-2 flex-1 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-amber-400/80 rounded-full rev-bar" style="width:0%" data-w="17%"></div></div><span class="w-6 text-right">20</span></div>
+          <div class="flex items-center gap-3 text-xs font-mono2 text-zinc-500"><span class="w-3">3</span><div class="h-2 flex-1 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-amber-400/60 rounded-full rev-bar" style="width:0%" data-w="4%"></div></div><span class="w-6 text-right">5</span></div>
+          <div class="flex items-center gap-3 text-xs font-mono2 text-zinc-500"><span class="w-3">2</span><div class="h-2 flex-1 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-amber-400/40 rounded-full rev-bar" style="width:0%" data-w="3%"></div></div><span class="w-6 text-right">3</span></div>
+          <div class="flex items-center gap-3 text-xs font-mono2 text-zinc-500"><span class="w-3">1</span><div class="h-2 flex-1 bg-white/5 rounded-full overflow-hidden"><div class="h-full bg-amber-400/25 rounded-full rev-bar" style="width:0%" data-w="10%"></div></div><span class="w-6 text-right">11</span></div>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-2">
+          <span class="font-mono2 text-[10px] tracking-wider uppercase border border-amber-400/30 text-amber-300 bg-amber-400/5 px-3 py-1.5 rounded-full">advanced machines · 5</span>
+          <span class="font-mono2 text-[10px] tracking-wider uppercase border border-white/10 text-zinc-400 px-3 py-1.5 rounded-full">premium gym · 3</span>
+          <span class="font-mono2 text-[10px] tracking-wider uppercase border border-white/10 text-zinc-400 px-3 py-1.5 rounded-full">cardio space · 2</span>
+          <span class="font-mono2 text-[10px] tracking-wider uppercase border border-white/10 text-zinc-400 px-3 py-1.5 rounded-full">spacious · 2</span>
+          <span class="font-mono2 text-[10px] tracking-wider uppercase border border-white/10 text-zinc-500 px-3 py-1.5 rounded-full">+6 more</span>
+        </div>
+        <div class="mt-8 grid grid-cols-2 gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=LegacyFitness+Jagat+Puri+Shahdara+Delhi+110032" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-amber-400 text-black text-sm font-bold px-4 py-3 rounded-lg hover:bg-amber-300 transition-colors"><i data-lucide="pen-line" class="w-4 h-4"></i>Write a review</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=LegacyFitness+Jagat+Puri+Shahdara+Delhi+110032" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 border border-white/15 text-zinc-200 text-sm font-semibold px-4 py-3 rounded-lg hover:border-amber-400/60 hover:text-amber-300 transition-colors">All 115 reviews<i data-lucide="external-link" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <article class="reveal card-lift glass rounded-2xl p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <span class="w-12 h-12 rounded-full bg-amber-400 text-black grid place-items-center font-display text-xl">A</span>
+              <div>
+                <p class="font-semibold text-zinc-100">Anant</p>
+                <p class="font-mono2 text-[10px] tracking-wider uppercase text-zinc-500 mt-0.5">Local Guide · 124 reviews · 283 photos</p>
+              </div>
+            </div>
+            <span class="font-mono2 text-[10px] text-zinc-600 uppercase shrink-0">5 yrs ago</span>
+          </div>
+          <div class="flex gap-1 mt-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+          </div>
+          <p class="text-zinc-300 text-[15px] leading-relaxed mt-4">"A very nice, clean, spacious and premium gym in this area. All the machines are perfect and advanced, the gym also provides male &amp; female trainers. They are keeping a tight check on sanitization, body temperature checking and cleanliness."</p>
+          <div class="flex items-center gap-5 mt-5 pt-5 border-t border-white/5 text-zinc-500 text-xs font-mono2">
+            <span class="flex items-center gap-1.5"><i data-lucide="thumbs-up" class="w-3.5 h-3.5 text-amber-400"></i>11 found this helpful</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="share-2" class="w-3.5 h-3.5"></i>Shared on Google</span>
+          </div>
+        </article>
+
+        <article class="reveal reveal-d1 card-lift glass rounded-2xl p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <span class="w-12 h-12 rounded-full bg-zinc-700 text-zinc-100 grid place-items-center font-display text-xl">F</span>
+              <div>
+                <p class="font-semibold text-zinc-100">Fit&amp;fitness with katariya</p>
+                <p class="font-mono2 text-[10px] tracking-wider uppercase text-zinc-500 mt-0.5">2 reviews · 2 photos</p>
+              </div>
+            </div>
+            <span class="font-mono2 text-[10px] text-zinc-600 uppercase shrink-0">5 yrs ago</span>
+          </div>
+          <div class="flex gap-1 mt-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+          </div>
+          <p class="text-zinc-300 text-[15px] leading-relaxed mt-4">"The Legacy gym is luxury and affordable, facilities great and international certified trainer also."</p>
+          <div class="flex items-center gap-5 mt-5 pt-5 border-t border-white/5 text-zinc-500 text-xs font-mono2">
+            <span class="flex items-center gap-1.5"><i data-lucide="thumbs-up" class="w-3.5 h-3.5 text-amber-400"></i>1 found this helpful</span>
+          </div>
+        </article>
+
+        <article class="reveal reveal-d2 card-lift glass rounded-2xl p-7">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <span class="w-12 h-12 rounded-full bg-zinc-800 border border-white/10 text-amber-400 grid place-items-center font-display text-xl">D</span>
+              <div>
+                <p class="font-semibold text-zinc-100">Deepak Sharma</p>
+                <p class="font-mono2 text-[10px] tracking-wider uppercase text-zinc-500 mt-0.5">1 review · 1 photo</p>
+              </div>
+            </div>
+            <span class="font-mono2 text-[10px] text-zinc-600 uppercase shrink-0">2 yrs ago</span>
+          </div>
+          <div class="flex gap-1 mt-4">
+            <i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i><i data-lucide="star" class="w-4 h-4 text-amber-400 fill-amber-400"></i>
+          </div>
+          <p class="text-zinc-300 text-[15px] leading-relaxed mt-4">"Clean space, updated equipment, nice locker, great trainer and staff."</p>
+          <div class="flex items-center gap-5 mt-5 pt-5 border-t border-white/5 text-zinc-500 text-xs font-mono2">
+            <span class="flex items-center gap-1.5"><i data-lucide="badge-check" class="w-3.5 h-3.5 text-amber-400"></i>Verified Google review</span>
+          </div>
+        </article>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=LegacyFitness+Jagat+Puri+Shahdara+Delhi+110032" target="_blank" rel="noopener" class="reveal group flex items-center justify-between glass rounded-2xl px-7 py-5 hover:border-amber-400/40 transition-colors">
+          <span class="font-mono2 text-[11px] tracking-[0.2em] uppercase text-zinc-400 group-hover:text-amber-300 transition-colors">Read all 112 more reviews on Google</span>
+          <i data-lucide="arrow-right" class="w-5 h-5 text-amber-400 group-hover:translate-x-1.5 transition-transform"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="relative border-t border-white/5 bg-[#0b0b0d] scroll-mt-24">
+  <div class="absolute inset-0 bg-grid opacity-50 grid-fade"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-20 lg:py-28">
+    <div class="reveal flex items-center gap-4 mb-6">
+      <span class="hazard h-1.5 w-14 rounded-full"></span>
+      <span class="font-mono2 text-[11px] tracking-[0.3em] uppercase text-amber-400">04 · Find us</span>
+    </div>
+    <h2 class="reveal font-display uppercase text-[clamp(2.6rem,6vw,4.8rem)] leading-[0.95] mb-14">In the heart of <span class="text-stroke">Shahdara</span><span class="text-amber-400">.</span></h2>
+
+    <div class="grid lg:grid-cols-2 gap-6 items-stretch">
+      <div class="reveal glass rounded-2xl p-8 flex flex-col">
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <span class="w-11 h-11 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="map-pin" class="w-5 h-5 text-amber-400"></i></span>
+            <div>
+              <p class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500">Address</p>
+              <p class="text-zinc-200 mt-1.5 leading-relaxed">A-82 Jagat Puri Chowk, near Under Pass,<br>Nathu Colony, Shahdara, Delhi — 110032</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="w-11 h-11 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="phone" class="w-5 h-5 text-amber-400"></i></span>
+            <div>
+              <p class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500">Phone / WhatsApp</p>
+              <a href="tel:+917042669192" class="text-zinc-200 mt-1.5 block hover:text-amber-300 transition-colors font-mono2 tracking-wider">070426 69192</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="w-11 h-11 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="clock" class="w-5 h-5 text-amber-400"></i></span>
+            <div>
+              <p class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500">Hours</p>
+              <p class="text-zinc-200 mt-1.5">Open daily · Closes 8:00 PM <span class="ml-2 inline-flex items-center gap-1.5 text-xs text-emerald-400"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>Open now</span></p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="w-11 h-11 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="hash" class="w-5 h-5 text-amber-400"></i></span>
+            <div>
+              <p class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500">Plus code</p>
+              <p class="text-zinc-200 mt-1.5 font-mono2 tracking-wider">M7QX+QW Delhi</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="w-11 h-11 shrink-0 rounded-lg bg-amber-400/10 border border-amber-400/25 grid place-items-center"><i data-lucide="instagram" class="w-5 h-5 text-amber-400"></i></span>
+            <div>
+              <p class="font-mono2 text-[10px] tracking-[0.22em] uppercase text-zinc-500">Instagram</p>
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="text-zinc-200 mt-1.5 block hover:text-amber-300 transition-colors">@legacyfitness · follow the grind</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-3 mt-8 pt-8 border-t border-white/5">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=LegacyFitness%2C+A-82+Jagat+Puri+Chowk%2C+Nathu+Colony%2C+Shahdara%2C+Delhi+110032" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-amber-400 text-black text-sm font-bold px-5 py-3.5 rounded-lg hover:bg-amber-300 transition-colors"><i data-lucide="navigation" class="w-4 h-4"></i>Get directions</a>
+          <a href="#" data-wa-service="Gym Membership" class="wa-service inline-flex items-center justify-center gap-2 border border-white/15 text-zinc-200 text-sm font-semibold px-5 py-3.5 rounded-lg hover:border-amber-400/60 hover:text-amber-300 transition-colors"><i data-lucide="message-circle" class="w-4 h-4 text-amber-400"></i>WhatsApp us</a>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d1 relative rounded-2xl overflow-hidden border border-white/10 min-h-[420px]">
+        <iframe title="LegacyFitness location map — Shahdara, Delhi" src="https://www.google.com/maps?q=LegacyFitness%2C%20A-82%20Jagat%20Puri%20Chowk%2C%20Nathu%20Colony%2C%20Shahdara%2C%20Delhi%20110032&z=16&output=embed" class="map-dark absolute inset-0 w-full h-full border-0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="absolute top-4 left-4 glass rounded-lg px-4 py-3 pointer-events-none">
+          <p class="font-display text-sm uppercase">Legacy<span class="text-amber-400">Fitness</span></p>
+          <p class="font-mono2 text-[9px] tracking-[0.2em] uppercase text-zinc-400 mt-0.5">Jagat Puri Chowk · 110032</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="relative border-t border-white/5 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-amber-400/[0.06] to-transparent"></div>
+  <div class="relative max-w-7xl mx-auto px-4 py-20 lg:py-24 text-center">
+    <p class="reveal font-mono2 text-[11px] tracking-[0.3em] uppercase text-amber-400">Your first session is on us</p>
+    <h2 class="reveal reveal-d1 font-display uppercase text-[clamp(2.8rem,8vw,6.5rem)] leading-[0.95] mt-5">Stop scrolling<span class="text-amber-400">.</span><br><span class="text-stroke">Start lifting.</span></h2>
+    <div class="reveal reveal-d2 mt-10 flex flex-wrap justify-center gap-4">
+      <a href="#lead-form" class="group inline-flex items-center gap-3 bg-amber-400 text-black font-bold px-8 py-4 rounded-md hover:bg-amber-300 transition-all hover:gap-4">Claim free trial<i data-lucide="arrow-right" class="w-5 h-5"></i></a>
+      <a href="tel:+917042669192" class="inline-flex items-center gap-3 border border-white/15 text-zinc-200 font-semibold px-8 py-4 rounded-md hover:border-amber-400/60 hover:text-amber-300 transition-colors"><i data-lucide="phone" class="w-4.5 h-4.5 text-amber-400"></i>070426 69192</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-white/5 bg-[#08080a]">
+  <div class="max-w-7xl mx-auto px-4 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="w-10 h-10 bg-amber-400 rounded-md grid place-items-center"><i data-lucide="dumbbell" class="w-5.5 h-5.5 text-black"></i></span>
+        <span class="font-display text-xl">LEGACY<span class="text-amber-400">FITNESS</span></span>
+      </div>
+      <p class="text-zinc-500 text-sm leading-relaxed mt-5">Shahdara's premium-yet-affordable gym. Advanced machines, certified coaches, honest prices — since day one.</p>
+      <p class="font-mono2 text-[10px] tracking-[0.25em] uppercase text-zinc-600 mt-4">लेगिसी फिटनेस</p>
+    </div>
+    <div>
+      <p class="font-mono2 text-[10px] tracking-[0.28em] uppercase text-amber-400 mb-5">Explore</p>
+      <ul class="space-y-3 text-sm text-zinc-400">
+        <li><a href="#services" class="hover:text-amber-300 transition-colors">Services</a></li>
+        <li><a href="#why" class="hover:text-amber-300 transition-colors">Why Legacy</a></li>
+        <li><a href="#reviews" class="hover:text-amber-300 transition-colors">Reviews</a></li>
+        <li><a href="#visit" class="hover:text-amber-300 transition-colors">Visit Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-mono2 text-[10px] tracking-[0.28em] uppercase text-amber-400 mb-5">Training</p>
+      <ul class="space-y-3 text-sm text-zinc-400">
+        <li>Strength &amp; Machines</li>
+        <li>Cardio Zone</li>
+        <li>Personal Training</li>
+        <li>Weight-Loss Programs</li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-mono2 text-[10px] tracking-[0.28em] uppercase text-amber-400 mb-5">Contact</p>
+      <ul class="space-y-3 text-sm text-zinc-400">
+        <li class="flex gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>A-82 Jagat Puri Chowk, Shahdara, Delhi 110032</li>
+        <li class="flex gap-2.5"><i data-lucide="phone" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i><a href="tel:+917042669192" class="hover:text-amber-300 transition-colors">070426 69192</a></li>
+        <li class="flex gap-2.5"><i data-lucide="clock" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>Open daily · Closes 8:00 PM</li>
+        <li class="flex gap-2.5"><i data-lucide="instagram" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="hover:text-amber-300 transition-colors">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-wrap items-center justify-between gap-4">
+      <p class="font-mono2 text-[10px] tracking-[0.18em] uppercase text-zinc-600">© <span id="year">2025</span> LegacyFitness · Shahdara, Delhi · Rated 4.3 on Google</p>
+      <a href="#top" class="inline-flex items-center gap-2 font-mono2 text-[10px] tracking-[0.18em] uppercase text-zinc-500 hover:text-amber-300 transition-colors">Back to top<i data-lucide="arrow-up-right" class="w-3.5 h-3.5"></i></a>
+    </div>
+  </div>
+</footer>
+
+<a href="#" data-wa-service="Free Trial Session" class="wa-service fixed bottom-6 right-6 z-50 w-14 h-14 bg-amber-400 rounded-full grid place-items-center shadow-2xl shadow-amber-400/30 hover:scale-110 transition-transform" aria-label="Chat on WhatsApp">
+  <span class="fab-ring absolute inset-0 rounded-full border-2 border-amber-400"></span>
+  <i data-lucide="message-circle" class="w-6 h-6 text-black relative"></i>
+</a>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+lucide.createIcons();
+
+const WA_NUMBER = "917042669192";
+const buildWaLink = (name, service, phone) => {
+  const msg = "Hi LegacyFitness!" + (name ? " I'm " + name + "." : "") + " I'm interested in: " + service + "." + (phone ? " My number: +91 " + phone + "." : "") + " Please share plan details and a free-trial slot. (Found you via the website)";
+  return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+};
+
+document.getElementById("wa-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const nameEl = document.getElementById("f-name");
+  const phoneEl = document.getElementById("f-phone");
+  const serviceEl = document.getElementById("f-service");
+  const errEl = document.getElementById("form-error");
+  const name = nameEl.value.trim();
+  const phone = phoneEl.value.replace(/\D/g, "").replace(/^91(?=\d{10}$)/, "");
+  nameEl.classList.remove("field-error");
+  phoneEl.classList.remove("field-error");
+  errEl.classList.add("hidden");
+  if (name.length < 2) {
+    nameEl.classList.add("field-error");
+    errEl.textContent = "Please enter your name so we know who is joining.";
+    errEl.classList.remove("hidden");
+    nameEl.focus();
+    return;
+  }
+  if (phone.length !== 10) {
+    phoneEl.classList.add("field-error");
+    errEl.textContent = "Please enter a valid 10-digit Indian mobile number.";
+    errEl.classList.remove("hidden");
+    phoneEl.focus();
+    return;
+  }
+  window.open(buildWaLink(name, serviceEl.value, phone), "_blank", "noopener");
+  const btn = e.target.querySelector("button[type=submit]");
+  const original = btn.innerHTML;
+  btn.innerHTML = '<i data-lucide="check" class="w-5 h-5"></i>Opening WhatsApp…';
+  lucide.createIcons();
+  setTimeout(() => { btn.innerHTML = original; lucide.createIcons(); }, 2600);
+});
+
+document.querySelectorAll(".wa-service").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.open(buildWaLink("", el.dataset.waService || "Gym Membership", ""), "_blank", "noopener");
+  });
+});
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in");
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+const barObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const bar = entry.target;
+      bar.style.transition = "width 1.2s cubic-bezier(.22,1,.36,1)";
+      bar.style.width = bar.dataset.w;
+      barObserver.unobserve(bar);
+    }
+  });
+}, { threshold: 0.4 });
+document.querySelectorAll(".rev-bar").forEach((el) => barObserver.observe(el));
+
+const animateCounter = (el) => {
+  const target = parseFloat(el.dataset.target);
+  const decimals = parseInt(el.dataset.decimals || "0", 10);
+  const duration = 1400;
+  const start = performance.now();
+  const tick = (now) => {
+    const p = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - p, 4);
+    el.textContent = (target * eased).toFixed(decimals);
+    if (p < 1) requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+};
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.6 });
+document.querySelectorAll(".counter").forEach((el) => counterObserver.observe(el));
+
+const nav = document.getElementById("site-nav");
+window.addEventListener("scroll", () => {
+  nav.classList.toggle("scrolled", window.scrollY > 24);
+}, { passive: true });
+
+const mobileMenu = document.getElementById("mobile-menu");
+document.getElementById("menu-btn").addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
+  document.body.style.overflow = "hidden";
+});
+const closeMenu = () => {
+  mobileMenu.classList.add("hidden");
+  document.body.style.overflow = "";
+};
+document.getElementById("menu-close").addEventListener("click", closeMenu);
+document.querySelectorAll(".mob-link").forEach((el) => el.addEventListener("click", closeMenu));
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
