@@ -1,814 +1,883 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Alpha Institute · अल्फा इंस्टीट्यूट — Coaching Center, Shivaji Park, Shahdara, Delhi</title>
-<meta name="description" content="Alpha Institute — 4.9★ rated coaching center on Post Office Street, Shivaji Park, Shahdara, Delhi 110032. Experienced teachers, small batches, weekly tests & career guidance. Call 080 767 87929." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Game Of Fingers — Salon & Academy · Shahdara, New Delhi</title>
+<meta name="description" content="4.9-rated unisex salon & academy in Shahdara, Delhi. Nanoplastia, hair botox, balayage, facials, mani-pedi & groom packages. Book on WhatsApp — open daily till 9:30 PM.">
+<meta name="variation-seed" content="tgf-shahdara-110032">
+<meta property="og:title" content="The Game Of Fingers — Salon & Academy">
+<meta property="og:description" content="Delhi's 4.9-rated studio for hair, skin & nails. Babarpur Main Road, Shahdara. Open daily till 9:30 PM.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.pexels.com/photos/7195803/pexels-photo-7195803.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="%230A0908"/><text x="32" y="42" font-family="Georgia,serif" font-style="italic" font-size="28" fill="%23DFAE93" text-anchor="middle">f</text></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-noir: #0A0908;
+  --color-coal: #121009;
+  --color-panel: #171310;
+  --color-gold: #DFAE93;
+  --color-goldsoft: #F2D6C2;
+  --color-ivory: #F5EDE6;
+  --color-mute: #AEA296;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "The Game Of Fingers Salon & Academy",
+  "alternateName": "TGF Salon & Academy",
+  "telephone": "+91 90508 24008",
+  "url": "https://www.instagram.com/tgfsalonandacademy",
+  "sameAs": ["https://www.instagram.com/tgfsalonandacademy"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1/7782, Babarpur Main Rd, Gorakh Park East",
+    "addressLocality": "Shahdara, Delhi",
+    "postalCode": "110032",
+    "addressCountry": "IN"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "21:30"
+  },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "170" },
+  "priceRange": "₹₹"
+}
+</script>
 <style>
-  :root{
-    --ink:#171640; --indigo:#2f2ab8; --indigo-deep:#1d1b6e; --amber:#f59e0b; --paper:#fbfaf4;
-  }
-  html{ -webkit-font-smoothing:antialiased; }
-  body{ font-family:'Inter',system-ui,sans-serif; background:var(--paper); color:var(--ink); }
-  .font-display{ font-family:'Space Grotesk',sans-serif; letter-spacing:-0.02em; }
-  .font-hindi{ font-family:'Noto Sans Devanagari',sans-serif; }
+  html { -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--font-body); background: #0A0908; color: #F5EDE6; overflow-x: clip; }
+  ::selection { background: #DFAE93; color: #0A0908; }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: #0A0908; }
+  ::-webkit-scrollbar-thumb { background: #2b241e; border-radius: 8px; border: 2px solid #0A0908; }
+  ::-webkit-scrollbar-thumb:hover { background: #DFAE93; }
 
-  /* subtle grid pattern */
-  .grid-bg{
+  .bg-grid {
     background-image:
-      linear-gradient(to right, rgba(29,27,110,.055) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(29,27,110,.055) 1px, transparent 1px);
-    background-size:44px 44px;
+      linear-gradient(to right, rgba(223,174,147,.055) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(223,174,147,.055) 1px, transparent 1px);
+    background-size: 56px 56px;
   }
-  .grid-bg-dark{
-    background-image:
-      linear-gradient(to right, rgba(255,255,255,.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255,255,255,.05) 1px, transparent 1px);
-    background-size:44px 44px;
+  .grid-fade {
+    -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 30%, transparent 78%);
+    mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 30%, transparent 78%);
   }
+  .noise::after {
+    content: ""; position: fixed; inset: 0; z-index: 60; pointer-events: none; opacity: .05;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%25" height="100%25" filter="url(%23n)"/></svg>');
+  }
+  .glass {
+    background: linear-gradient(160deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    border: 1px solid rgba(245,237,230,.10);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    box-shadow: 0 24px 60px -24px rgba(0,0,0,.7), inset 0 1px 0 rgba(255,255,255,.06);
+  }
+  .glass-deep {
+    background: linear-gradient(165deg, rgba(23,19,16,.82), rgba(10,9,8,.88));
+    border: 1px solid rgba(245,237,230,.09);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+  }
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(223,174,147,.22);
+    color: transparent;
+  }
+  .gold-grad {
+    background: linear-gradient(115deg, #F2D6C2 0%, #DFAE93 45%, #B98564 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .field {
+    width: 100%; border-radius: 14px; border: 1px solid rgba(245,237,230,.12);
+    background: rgba(10,9,8,.55); padding: .85rem 1rem .85rem 2.75rem;
+    font-size: .92rem; color: #F5EDE6; outline: none;
+    transition: border-color .25s, box-shadow .25s, background .25s;
+  }
+  .field::placeholder { color: rgba(174,162,150,.55); }
+  .field:focus { border-color: rgba(223,174,147,.65); box-shadow: 0 0 0 4px rgba(223,174,147,.12); background: rgba(10,9,8,.8); }
+  select.field { appearance: none; }
+  select.field option { background: #171310; color: #F5EDE6; }
 
-  /* filled lucide stars (works when class is on parent OR on the icon itself) */
-  .star-filled svg, svg.star-filled{ fill:currentColor; stroke:currentColor; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .marquee-track { display: flex; width: max-content; animation: marquee 30s linear infinite; }
+  .marquee-track:hover { animation-play-state: paused; }
 
-  /* keep anchored sections clear of the fixed header */
-  section[id]{ scroll-margin-top:88px; }
-
-  /* marquee */
-  @keyframes marquee{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
-  .marquee-track{ display:flex; width:max-content; animation:marquee 30s linear infinite; }
-  .marquee:hover .marquee-track{ animation-play-state:paused; }
-
-  /* scroll snap row */
-  .snap-row{ scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
-  .snap-row::-webkit-scrollbar{ display:none; }
-  .snap-row > *{ scroll-snap-align:start; }
-
-  /* reveal on scroll */
-  .reveal{ opacity:0; transform:translateY(26px); transition:opacity .8s cubic-bezier(.22,1,.36,1), transform .8s cubic-bezier(.22,1,.36,1); }
-  .reveal.in{ opacity:1; transform:none; }
-
-  /* hero tab panels */
-  .tab-panel{ display:none; }
-  .tab-panel.active{ display:block; animation:tabIn .5s cubic-bezier(.22,1,.36,1) both; }
-  @keyframes tabIn{ from{ opacity:0; transform:translateY(14px);} to{ opacity:1; transform:none;} }
-  .tab-btn{ transition:all .25s ease; }
-  .tab-btn.active{ background:var(--indigo-deep); color:#fff; border-color:var(--indigo-deep); }
-  .tab-btn.active svg{ color:var(--amber); }
-
-  /* floating shapes */
-  @keyframes floaty{ 0%,100%{ transform:translateY(0) rotate(0deg);} 50%{ transform:translateY(-12px) rotate(1.2deg);} }
-  .floaty{ animation:floaty 7s ease-in-out infinite; }
-  .floaty-slow{ animation:floaty 10s ease-in-out infinite reverse; }
-
-  /* pulse ring for floating CTA */
-  @keyframes pulseRing{ 0%{ box-shadow:0 0 0 0 rgba(47,42,184,.45);} 70%{ box-shadow:0 0 0 18px rgba(47,42,184,0);} 100%{ box-shadow:0 0 0 0 rgba(47,42,184,0);} }
-  .pulse-ring{ animation:pulseRing 2.4s cubic-bezier(.4,0,.6,1) infinite; }
-
-  /* modal — hidden state must never intercept page clicks */
-  #modalBackdrop{ transition:opacity .3s ease; }
-  #modalCard{ transition:transform .35s cubic-bezier(.22,1,.36,1), opacity .3s ease; }
-  .modal-hidden{ visibility:hidden; pointer-events:none; transition:visibility 0s linear .4s; }
-  .modal-hidden #modalBackdrop{ opacity:0; }
-  .modal-hidden #modalCard{ opacity:0; transform:translateY(28px) scale(.97); pointer-events:none; }
-
-  /* underline squiggle accent */
-  .squiggle{
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='8' viewBox='0 0 40 8'%3E%3Cpath d='M0 4 Q5 0 10 4 T20 4 T30 4 T40 4' fill='none' stroke='%23f59e0b' stroke-width='2.5'/%3E%3C/svg%3E");
-    background-repeat:repeat-x; background-position:0 100%; background-size:40px 8px; padding-bottom:.35em;
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  .floaty { animation: floaty 6s ease-in-out infinite; }
+  @keyframes pulse-ring { 0% { transform: scale(1); opacity: .5; } 100% { transform: scale(1.9); opacity: 0; } }
+  .wa-pulse::before {
+    content: ""; position: absolute; inset: 0; border-radius: 9999px;
+    border: 1.5px solid rgba(37,211,102,.55); animation: pulse-ring 2.2s cubic-bezier(.2,.6,.3,1) infinite;
   }
 
-  ::selection{ background:var(--amber); color:var(--ink); }
+  [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .9s cubic-bezier(.22,.61,.36,1), transform .9s cubic-bezier(.22,.61,.36,1); }
+  [data-reveal].revealed { opacity: 1; transform: translateY(0); }
+
+  .card-img { transition: transform 1s cubic-bezier(.22,.61,.36,1), filter .6s; }
+  .group:hover .card-img { transform: scale(1.06); filter: saturate(1.1); }
+  .lift { transition: transform .5s cubic-bezier(.22,.61,.36,1), border-color .4s, box-shadow .5s; }
+  .lift:hover { transform: translateY(-6px); border-color: rgba(223,174,147,.35); box-shadow: 0 30px 70px -30px rgba(223,174,147,.18); }
+
+  .map-dark { filter: invert(.92) hue-rotate(185deg) saturate(.32) brightness(.92) contrast(.95); }
+
+  .glow-cursor {
+    position: fixed; z-index: 1; width: 560px; height: 560px; border-radius: 50%;
+    pointer-events: none; left: 0; top: 0; transform: translate(-50%,-50%);
+    background: radial-gradient(circle, rgba(223,174,147,.09) 0%, transparent 62%);
+  }
+  @media (hover: none), (prefers-reduced-motion: reduce) {
+    .glow-cursor { display: none; }
+    .marquee-track { animation-duration: 46s; }
+    [data-reveal] { transition: none; opacity: 1; transform: none; }
+  }
+  .star-fill svg { fill: currentColor; }
 </style>
 </head>
 
-<body class="grid-bg">
+<body class="noise font-body bg-noir text-ivory">
 
-<!-- ══════════════ HEADER ══════════════ -->
-<header id="siteHeader" class="fixed top-0 inset-x-0 z-40 transition-all duration-300 bg-[#fbfaf4]/85 backdrop-blur-md border-b border-indigo-950/10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-[72px] flex items-center justify-between gap-4">
-    <a href="#top" class="flex items-center gap-3 group">
-      <span class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#1d1b6e] text-white grid place-items-center font-display font-bold text-xl shadow-lg shadow-indigo-900/25 group-hover:rotate-6 transition-transform">α</span>
-      <span class="leading-tight">
-        <span class="block font-display font-bold text-[15px] sm:text-lg">Alpha Institute</span>
-        <span class="block font-hindi text-[11px] sm:text-xs text-indigo-900/60">अल्फा इंस्टीट्यूट · Shahdara, Delhi</span>
+<div id="glowCursor" class="glow-cursor"></div>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="relative z-50 border-b border-white/5 bg-noir/95">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-2.5 text-[11px] font-semibold tracking-[0.14em] uppercase">
+    <div class="flex items-center gap-2 text-gold">
+      <i data-lucide="star" class="star-fill h-3.5 w-3.5"></i>
+      <span>4.9 rated · 170+ Google reviews</span>
+    </div>
+    <p class="hidden text-mute md:block">Walk-ins welcome · Book ahead on WhatsApp to skip the wait</p>
+    <div class="flex items-center gap-2">
+      <span data-open-dot class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+      <span data-open-status class="text-mute">Open daily · 10 AM – 9:30 PM</span>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header id="siteNav" class="sticky top-0 z-40 border-b border-transparent transition-all duration-500">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4">
+    <a href="#top" class="group flex items-baseline gap-2.5">
+      <span class="font-display text-[26px] leading-none font-semibold italic text-ivory">TGF</span>
+      <span class="hidden flex-col leading-tight sm:flex">
+        <span class="text-[11px] font-bold tracking-[0.28em] uppercase text-ivory/90">Salon &amp; Academy</span>
+        <span class="text-[10px] tracking-[0.22em] uppercase text-gold/80">The Game Of Fingers</span>
       </span>
     </a>
-    <div class="flex items-center gap-2 sm:gap-3">
-      <span class="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-400/15 text-amber-700 border border-amber-500/30 text-sm font-semibold">
-        <i data-lucide="star" class="w-4 h-4 star-filled"></i> 4.9 <span class="font-normal text-amber-700/70">(125)</span>
-      </span>
-      <a href="tel:+918076787929" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-950/15 text-sm font-semibold hover:border-indigo-700 hover:text-indigo-800 transition-colors">
-        <i data-lucide="phone" class="w-4 h-4"></i> 080 767 87929
+    <div class="hidden items-center gap-9 text-[13px] font-semibold tracking-wide text-mute lg:flex">
+      <a href="#services" class="transition hover:text-gold">Services</a>
+      <a href="#why" class="transition hover:text-gold">Why TGF</a>
+      <a href="#reviews" class="transition hover:text-gold">Reviews</a>
+      <a href="#visit" class="transition hover:text-gold">Visit Us</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="tel:+919050824008" class="hidden items-center gap-2 rounded-full border border-white/10 px-4 py-2.5 text-[13px] font-bold text-ivory/85 transition hover:border-gold/40 hover:text-gold md:flex">
+        <i data-lucide="phone" class="h-3.5 w-3.5"></i> 090508 24008
       </a>
-      <button onclick="openModal()" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-[#2f2ab8] text-white text-sm font-semibold shadow-lg shadow-indigo-700/25 hover:bg-[#1d1b6e] hover:-translate-y-0.5 transition-all">
-        <i data-lucide="message-circle" class="w-4 h-4"></i> Enquire
+      <a data-wa-service="General Appointment" href="#" class="flex items-center gap-2 rounded-full bg-gold px-5 py-2.5 text-[13px] font-extrabold text-noir shadow-[0_10px_30px_-10px_rgba(223,174,147,.6)] transition hover:bg-goldsoft hover:shadow-[0_14px_36px_-10px_rgba(223,174,147,.75)]">
+        <i data-lucide="message-circle" class="h-4 w-4"></i> Book Now
+      </a>
+      <button id="menuBtn" aria-label="Open menu" class="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-ivory lg:hidden">
+        <i data-lucide="menu" class="h-5 w-5"></i>
       </button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="glass-deep pointer-events-none absolute inset-x-4 top-full origin-top scale-y-95 rounded-2xl p-5 opacity-0 transition-all duration-300 lg:hidden">
+    <div class="flex flex-col gap-1 text-[15px] font-semibold">
+      <a href="#services" class="mob-link rounded-xl px-4 py-3 transition hover:bg-white/5 hover:text-gold">Services</a>
+      <a href="#why" class="mob-link rounded-xl px-4 py-3 transition hover:bg-white/5 hover:text-gold">Why TGF</a>
+      <a href="#reviews" class="mob-link rounded-xl px-4 py-3 transition hover:bg-white/5 hover:text-gold">Reviews</a>
+      <a href="#visit" class="mob-link rounded-xl px-4 py-3 transition hover:bg-white/5 hover:text-gold">Visit Us</a>
+      <a href="tel:+919050824008" class="mob-link mt-2 flex items-center justify-center gap-2 rounded-xl border border-gold/40 px-4 py-3 font-bold text-gold">
+        <i data-lucide="phone" class="h-4 w-4"></i> Call 090508 24008
+      </a>
     </div>
   </div>
 </header>
 
-<!-- ══════════════ HERO · TABBED ══════════════ -->
-<section id="top" class="relative overflow-hidden pt-28 sm:pt-36 pb-16 sm:pb-24">
-  <!-- watermark hindi -->
-  <div aria-hidden="true" class="pointer-events-none select-none absolute -top-6 right-0 font-hindi font-bold text-[19vw] leading-none text-indigo-950/[0.045] whitespace-nowrap">अल्फा</div>
-  <!-- soft blobs -->
-  <div aria-hidden="true" class="pointer-events-none absolute -top-32 -left-32 w-[420px] h-[420px] rounded-full bg-amber-300/25 blur-3xl"></div>
-  <div aria-hidden="true" class="pointer-events-none absolute top-40 -right-40 w-[460px] h-[460px] rounded-full bg-indigo-400/15 blur-3xl"></div>
+<main id="top">
 
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-[1.15fr_.85fr] gap-14 lg:gap-10 items-center">
-
-    <!-- LEFT : tabs + headline -->
-    <div>
-      <div class="reveal flex flex-wrap items-center gap-2 mb-6">
-        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1d1b6e] text-white text-xs font-semibold uppercase tracking-wider">
-          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Shivaji Park · Shahdara
-        </span>
-        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-indigo-950/10 text-xs font-semibold text-indigo-950/70">
-          <i data-lucide="badge-check" class="w-3.5 h-3.5 text-indigo-700"></i> Coaching Center
-        </span>
-        <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-indigo-950/10 text-xs font-semibold text-indigo-950/70">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Open · Closes 8:00 PM
-        </span>
-      </div>
-
-      <!-- TAB SWITCHER (pure JS) -->
-      <div class="reveal inline-flex flex-wrap gap-1.5 p-1.5 rounded-2xl bg-white border border-indigo-950/10 shadow-sm mb-7" role="tablist" aria-label="Choose your focus">
-        <button class="tab-btn active flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold border border-transparent text-indigo-950/70 hover:text-indigo-950" data-tab="0" role="tab" aria-selected="true">
-          <i data-lucide="book-open" class="w-4 h-4"></i> Subject Coaching
-        </button>
-        <button class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold border border-transparent text-indigo-950/70 hover:text-indigo-950" data-tab="1" role="tab" aria-selected="false">
-          <i data-lucide="clipboard-check" class="w-4 h-4"></i> Weekly Tests
-        </button>
-        <button class="tab-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-semibold border border-transparent text-indigo-950/70 hover:text-indigo-950" data-tab="2" role="tab" aria-selected="false">
-          <i data-lucide="compass" class="w-4 h-4"></i> Career Guidance
-        </button>
-      </div>
-
-      <!-- TAB PANELS -->
-      <div class="tab-panel active reveal" data-panel="0">
-        <h1 class="font-display font-bold text-[2.6rem] leading-[1.02] sm:text-6xl lg:text-[4.2rem]">
-          Experienced teachers.<br/>Small batches.<br/><span class="squiggle text-[#2f2ab8]">Real confidence.</span>
-        </h1>
-        <p class="mt-6 text-lg text-indigo-950/65 max-w-xl leading-relaxed">
-          Students of <strong class="text-indigo-950">Alpha Institute</strong> consistently praise its experienced, polite faculty and clean, safe classrooms — right on Post Office Street, Shivaji Park, Shahdara.
-        </p>
-        <div class="mt-5 flex flex-wrap gap-2">
-          <span class="inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-full bg-amber-400/15 border border-amber-500/30 text-amber-700"><i data-lucide="quote" class="w-3.5 h-3.5"></i>“well experienced teachers are here” — Google review</span>
-        </div>
-      </div>
-
-      <div class="tab-panel" data-panel="1">
-        <h1 class="font-display font-bold text-[2.6rem] leading-[1.02] sm:text-6xl lg:text-[4.2rem]">
-          Weekly tests that keep you <span class="squiggle text-[#2f2ab8]">exam-ready.</span>
-        </h1>
-        <p class="mt-6 text-lg text-indigo-950/65 max-w-xl leading-relaxed">
-          A steady rhythm of <strong class="text-indigo-950">weekly tests</strong> — a highlight students call out in their reviews — tracks your progress batch after batch, with feedback from teachers who know you by name.
-        </p>
-        <div class="mt-5 flex flex-wrap gap-2">
-          <span class="inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-full bg-amber-400/15 border border-amber-500/30 text-amber-700"><i data-lucide="clipboard-check" class="w-3.5 h-3.5"></i>“weekly tests” — mentioned in student reviews</span>
-        </div>
-      </div>
-
-      <div class="tab-panel" data-panel="2">
-        <h1 class="font-display font-bold text-[2.6rem] leading-[1.02] sm:text-6xl lg:text-[4.2rem]">
-          Career advice from mentors <span class="squiggle text-[#2f2ab8]">who care.</span>
-        </h1>
-        <p class="mt-6 text-lg text-indigo-950/65 max-w-xl leading-relaxed">
-          Beyond subjects, students call out <strong class="text-indigo-950">career guidance</strong> that made them “a capable and confident student” — in their own words, on Google.
-        </p>
-        <div class="mt-5 flex flex-wrap gap-2">
-          <span class="inline-flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-full bg-amber-400/15 border border-amber-500/30 text-amber-700"><i data-lucide="quote" class="w-3.5 h-3.5"></i>“career advices” — 3 review mentions</span>
-        </div>
-      </div>
-
-      <!-- CTAs -->
-      <div class="reveal mt-9 flex flex-wrap items-center gap-3">
-        <button onclick="openModal()" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-2xl bg-[#2f2ab8] text-white font-display font-semibold text-lg shadow-xl shadow-indigo-700/30 hover:bg-[#1d1b6e] hover:-translate-y-1 transition-all">
-          <i data-lucide="sparkles" class="w-5 h-5 text-amber-400"></i> Enquire Now
-        </button>
-        <a href="tel:+918076787929" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-2xl bg-white border-2 border-indigo-950/10 font-display font-semibold text-lg hover:border-amber-500 hover:-translate-y-1 transition-all">
-          <i data-lucide="phone-call" class="w-5 h-5 text-indigo-700"></i> 080 767 87929
-        </a>
-      </div>
-
-      <div class="reveal mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-indigo-950/55">
-        <span class="inline-flex items-center gap-1.5"><i data-lucide="clock" class="w-4 h-4"></i> Open · Closes 8:00 PM</span>
-        <span class="inline-flex items-center gap-1.5"><i data-lucide="hash" class="w-4 h-4"></i> Plus code: M7PP+6F Delhi</span>
-        <span class="inline-flex items-center gap-1.5"><i data-lucide="star" class="w-4 h-4 star-filled text-amber-500"></i> 4.9 from 125 Google reviews</span>
-      </div>
+  <!-- HERO : split -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="https://images.pexels.com/photos/7195803/pexels-photo-7195803.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1100&w=1920" alt="Inside The Game Of Fingers salon — Shahdara studio floor" class="h-full w-full object-cover opacity-[.16] saturate-[.6]" loading="eager">
+      <div class="absolute inset-0 bg-gradient-to-b from-noir/70 via-noir/55 to-noir"></div>
+      <div class="bg-grid grid-fade absolute inset-0"></div>
+      <div class="absolute -left-40 top-24 h-[480px] w-[480px] rounded-full bg-gold/10 blur-[140px]"></div>
+      <div class="absolute -right-48 bottom-0 h-[420px] w-[420px] rounded-full bg-[#7a4a35]/20 blur-[150px]"></div>
     </div>
 
-    <!-- RIGHT : rating composition (no photos) -->
-    <div class="relative reveal">
-      <div class="absolute inset-0 -rotate-2 rounded-[2rem] bg-gradient-to-br from-amber-300 to-amber-500 translate-x-3 translate-y-3"></div>
-      <div class="relative rounded-[2rem] bg-[#1d1b6e] grid-bg-dark text-white p-7 sm:p-9 shadow-2xl shadow-indigo-900/40 overflow-hidden">
-        <div aria-hidden="true" class="absolute -top-10 -right-10 w-48 h-48 rounded-full bg-amber-400/20 blur-2xl"></div>
+    <div class="relative mx-auto grid max-w-7xl gap-14 px-5 pb-24 pt-16 sm:pt-20 lg:grid-cols-[1.12fr_.88fr] lg:items-center lg:gap-10 lg:pb-32 lg:pt-24">
 
-        <div class="flex items-start justify-between">
-          <div>
-            <p class="text-white/60 text-sm font-medium uppercase tracking-widest">Google rating</p>
-            <div class="count-up font-display font-bold text-7xl sm:text-8xl leading-none mt-2" data-count="4.9" data-decimals="1">0.0</div>
+      <!-- left : headline -->
+      <div>
+        <div data-reveal class="mb-7 inline-flex items-center gap-3 rounded-full border border-gold/25 bg-gold/[.06] py-1.5 pl-2 pr-5 text-[11px] font-bold tracking-[0.2em] uppercase text-gold">
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-gold text-noir"><i data-lucide="sparkles" class="h-3.5 w-3.5"></i></span>
+          Unisex Salon &amp; Academy — Shahdara, Delhi
+        </div>
+
+        <h1 data-reveal data-delay="80" class="font-display leading-[0.94]">
+          <span class="block text-[clamp(2rem,4.2vw,3.4rem)] font-light italic text-ivory/85">The Game of</span>
+          <span class="gold-grad mt-1 block text-[clamp(3.4rem,8.6vw,7.2rem)] font-semibold tracking-[-0.02em] uppercase">Fingers</span>
+        </h1>
+
+        <p data-reveal data-delay="140" class="mt-4 text-[15px] font-medium tracking-wide text-gold/90">थे गेम ऑफ़ फ़िंगर्स — सैलून एंड एकेडमी</p>
+
+        <p data-reveal data-delay="180" class="mt-5 max-w-xl text-[17px] leading-relaxed text-mute">
+          Where hair, skin &amp; nails are played at championship level. East Delhi&#8217;s
+          <span class="font-bold text-ivory">4.9-star studio</span> for Nanoplastia, hair botox,
+          balayage and full-glow rituals — plus a working academy that trains the next generation of artists.
+        </p>
+
+        <div data-reveal data-delay="240" class="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
+          <div class="flex items-center gap-1.5 text-gold">
+            <i data-lucide="star" class="star-fill h-4.5 w-4.5"></i>
+            <i data-lucide="star" class="star-fill h-4.5 w-4.5"></i>
+            <i data-lucide="star" class="star-fill h-4.5 w-4.5"></i>
+            <i data-lucide="star" class="star-fill h-4.5 w-4.5"></i>
+            <i data-lucide="star" class="star-fill h-4.5 w-4.5"></i>
           </div>
-          <div class="text-right">
-            <div class="flex gap-1 text-amber-400 justify-end star-filled">
-              <i data-lucide="star" class="w-5 h-5"></i><i data-lucide="star" class="w-5 h-5"></i><i data-lucide="star" class="w-5 h-5"></i><i data-lucide="star" class="w-5 h-5"></i><i data-lucide="star" class="w-5 h-5"></i>
+          <p class="text-sm text-mute"><span class="text-base font-extrabold text-ivory">4.9</span> · 170+ verified Google reviews</p>
+          <span class="hidden h-4 w-px bg-white/15 sm:block"></span>
+          <p class="hidden items-center gap-1.5 text-sm text-mute sm:flex"><i data-lucide="badge-check" class="h-4 w-4 text-gold"></i> Shahdara&#8217;s most-loved parlour</p>
+        </div>
+
+        <div data-reveal data-delay="300" class="mt-9 flex flex-wrap items-center gap-4">
+          <a data-wa-service="General Appointment" href="#" class="group flex items-center gap-3 rounded-full bg-gold py-4 pl-7 pr-6 text-[15px] font-extrabold text-noir shadow-[0_18px_45px_-14px_rgba(223,174,147,.65)] transition hover:bg-goldsoft">
+            <i data-lucide="message-circle" class="h-5 w-5"></i>
+            Book on WhatsApp
+            <i data-lucide="arrow-up-right" class="h-4.5 w-4.5 transition-transform duration-300 group-hover:rotate-45"></i>
+          </a>
+          <a href="tel:+919050824008" class="flex items-center gap-3 rounded-full border border-white/15 py-4 pl-7 pr-6 text-[15px] font-bold text-ivory transition hover:border-gold/50 hover:text-gold">
+            <i data-lucide="phone" class="h-4.5 w-4.5"></i> 090508 24008
+          </a>
+        </div>
+
+        <div data-reveal data-delay="360" class="mt-9 flex flex-wrap gap-2.5">
+          <span class="rounded-full border border-white/10 bg-white/[.03] px-4 py-2 text-[11px] font-bold tracking-[0.14em] uppercase text-mute">Nanoplastia</span>
+          <span class="rounded-full border border-white/10 bg-white/[.03] px-4 py-2 text-[11px] font-bold tracking-[0.14em] uppercase text-mute">Hair Botox</span>
+          <span class="rounded-full border border-white/10 bg-white/[.03] px-4 py-2 text-[11px] font-bold tracking-[0.14em] uppercase text-mute">Balayage</span>
+          <span class="rounded-full border border-white/10 bg-white/[.03] px-4 py-2 text-[11px] font-bold tracking-[0.14em] uppercase text-mute">Groom Packages</span>
+        </div>
+      </div>
+
+      <!-- right : glassmorphism WhatsApp form -->
+      <div data-reveal data-delay="200" class="relative">
+        <div class="absolute -inset-3 rounded-[28px] bg-gradient-to-br from-gold/25 via-transparent to-gold/10 opacity-60 blur-xl"></div>
+        <div class="glass relative rounded-[26px] p-7 sm:p-9">
+          <div class="mb-1 flex items-center gap-2 text-[11px] font-bold tracking-[0.22em] uppercase text-gold">
+            <i data-lucide="calendar-check" class="h-4 w-4"></i> Instant booking
+          </div>
+          <h2 class="font-display text-[30px] font-semibold italic leading-tight text-ivory">Reserve your chair</h2>
+          <p class="mt-2 text-sm leading-relaxed text-mute">Tell us what you need — our team replies on WhatsApp within minutes.</p>
+
+          <form id="bookingForm" class="mt-7 space-y-4">
+            <div class="relative">
+              <i data-lucide="user" class="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-gold/70"></i>
+              <input class="field" type="text" id="fName" placeholder="Your name" required maxlength="60" autocomplete="name">
             </div>
-            <p class="mt-2 text-sm text-white/60"><span class="count-up font-display font-bold text-2xl text-white" data-count="125" data-decimals="0">0</span> reviews</p>
+            <div class="relative">
+              <i data-lucide="phone" class="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-gold/70"></i>
+              <input class="field" type="tel" id="fPhone" placeholder="Mobile number" required pattern="[0-9+ ()-]{8,15}" autocomplete="tel">
+            </div>
+            <div class="relative">
+              <i data-lucide="scissors" class="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-gold/70"></i>
+              <select class="field" id="fService" required>
+                <option value="" disabled selected>Choose a service</option>
+                <option>Hair Botox Treatment</option>
+                <option>Nanoplastia Treatment</option>
+                <option>Balayage / Hair Colour</option>
+                <option>Keratin &amp; Hair Spa</option>
+                <option>Facial &amp; Clean-up</option>
+                <option>Manicure &amp; Pedicure</option>
+                <option>Nail Art &amp; Extensions</option>
+                <option>Groom Package</option>
+                <option>Bridal / Party Makeup</option>
+                <option>Academy Course Enquiry</option>
+                <option>Something else</option>
+              </select>
+              <i data-lucide="chevron-down" class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute"></i>
+            </div>
+            <div class="relative">
+              <i data-lucide="clock" class="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-gold/70"></i>
+              <select class="field" id="fTime">
+                <option value="" disabled selected>Preferred time (optional)</option>
+                <option>Morning · 10 AM – 1 PM</option>
+                <option>Afternoon · 1 PM – 5 PM</option>
+                <option>Evening · 5 PM – 9:30 PM</option>
+              </select>
+              <i data-lucide="chevron-down" class="pointer-events-none absolute right-4 top-1/2 h-4 w-4 -translate-y-1/2 text-mute"></i>
+            </div>
+
+            <button type="submit" id="submitBtn" class="group flex w-full items-center justify-center gap-3 rounded-2xl bg-gold py-4 text-[15px] font-extrabold text-noir transition hover:bg-goldsoft">
+              <i data-lucide="message-circle" class="h-5 w-5"></i>
+              <span id="submitLabel">Continue on WhatsApp</span>
+              <i data-lucide="arrow-right" class="h-4.5 w-4.5 transition-transform duration-300 group-hover:translate-x-1"></i>
+            </button>
+          </form>
+
+          <div class="mt-5 flex items-center justify-between border-t border-white/10 pt-4 text-[11px] font-semibold tracking-wide text-mute">
+            <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="h-3.5 w-3.5 text-gold"></i> No advance needed</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="zap" class="h-3.5 w-3.5 text-gold"></i> Replies in minutes</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="clock" class="h-3.5 w-3.5 text-gold"></i> Till 9:30 PM</span>
           </div>
         </div>
-
-        <!-- rating bars (labelled, order-of-magnitude visual) -->
-        <div class="mt-6 space-y-1.5" aria-label="Most reviews are 5 star">
-          <div class="flex items-center gap-2 text-xs text-white/70"><span class="w-3 font-semibold">5</span><div class="h-2 flex-1 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-[96%] rounded-full bg-amber-400"></div></div><span class="w-14 text-right">4.9 avg</span></div>
-          <div class="flex items-center gap-2 text-xs text-white/40"><span class="w-3 font-semibold">4</span><div class="h-2 flex-1 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-[3%] rounded-full bg-white/40"></div></div><span class="w-14 text-right">few</span></div>
-          <div class="flex items-center gap-2 text-xs text-white/40"><span class="w-3 font-semibold">3–1</span><div class="h-2 flex-1 rounded-full bg-white/10 overflow-hidden"><div class="h-full w-[1%] rounded-full bg-white/30"></div></div><span class="w-14 text-right">rare</span></div>
-        </div>
-
-        <!-- review summary quotes -->
-        <div class="mt-7 space-y-3">
-          <p class="text-xs uppercase tracking-widest text-white/50 font-semibold flex items-center gap-2"><i data-lucide="sparkle" class="w-3.5 h-3.5 text-amber-400"></i> Google review summary</p>
-          <div class="floaty bg-white/[0.07] border border-white/10 rounded-xl px-4 py-3 text-sm text-white/85 flex gap-3"><i data-lucide="quote" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>“Great place for learning and well experienced teachers are here”</div>
-          <div class="floaty-slow bg-white/[0.07] border border-white/10 rounded-xl px-4 py-3 text-sm text-white/85 flex gap-3"><i data-lucide="quote" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>“They provide best facilities, small batches, good”</div>
-          <div class="floaty bg-white/[0.07] border border-white/10 rounded-xl px-4 py-3 text-sm text-white/85 flex gap-3" style="animation-delay:1.4s"><i data-lucide="quote" class="w-4 h-4 mt-0.5 shrink-0 text-amber-400"></i>“The teachers are very professional, have very good way of communication.”</div>
-        </div>
-      </div>
-
-      <!-- floating chip -->
-      <div class="floaty absolute -bottom-5 -left-4 sm:-left-8 bg-white rounded-2xl shadow-xl shadow-indigo-950/15 border border-indigo-950/10 px-4 py-3 flex items-center gap-3">
-        <span class="w-9 h-9 rounded-xl bg-amber-400/20 text-amber-600 grid place-items-center"><i data-lucide="award" class="w-5 h-5"></i></span>
-        <span class="text-sm leading-tight"><strong class="block font-display">Women-owned</strong><span class="text-indigo-950/55 text-xs">identifies as women-owned</span></span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════════ MARQUEE TRUST STRIP ══════════════ -->
-<div class="marquee border-y border-indigo-950/10 bg-white/70 backdrop-blur-sm py-4 overflow-hidden" aria-hidden="true">
-  <div class="marquee-track gap-3 pr-3" id="marqueeTrack">
-    <!-- set duplicated by JS for seamless loop -->
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="graduation-cap" class="w-4 h-4 text-indigo-700"></i> Experienced teachers · 8 mentions</span>
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="smile" class="w-4 h-4 text-amber-500"></i> Polite teachers · 4 mentions</span>
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="compass" class="w-4 h-4 text-indigo-700"></i> Career advices · 3 mentions</span>
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="clipboard-check" class="w-4 h-4 text-amber-500"></i> Weekly tests · 2 mentions</span>
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="users" class="w-4 h-4 text-indigo-700"></i> Small batches</span>
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="rainbow" class="w-4 h-4 text-amber-500"></i> LGBTQ+ friendly</span>
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="award" class="w-4 h-4 text-indigo-700"></i> Women-owned</span>
-    <span class="mq inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#fbfaf4] border border-indigo-950/10 text-sm font-semibold whitespace-nowrap"><i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i> Clean &amp; safe classrooms</span>
-  </div>
-</div>
-
-<!-- ══════════════ PROGRAMS · COMPARISON TABLE ══════════════ -->
-<section id="programs" class="py-20 sm:py-28">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
-      <div>
-        <p class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-indigo-700"><i data-lucide="table-properties" class="w-4 h-4"></i> Programs at Alpha</p>
-        <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">Compare &amp; choose <span class="text-[#2f2ab8]">your batch.</span></h2>
-      </div>
-      <p class="text-indigo-950/55 max-w-sm text-sm leading-relaxed">Programs are framed from what students &amp; the institute share publicly. Fees, timings &amp; new batch dates aren’t published online — <a href="tel:+918076787929" class="font-semibold text-indigo-800 underline decoration-amber-400 decoration-2 underline-offset-2">call to confirm today’s schedule</a>.</p>
-    </div>
-
-    <!-- DESKTOP TABLE -->
-    <div class="reveal hidden md:block rounded-3xl overflow-hidden border border-indigo-950/10 shadow-xl shadow-indigo-950/[0.07] bg-white">
-      <table class="w-full text-left">
-        <thead>
-          <tr class="bg-[#1d1b6e] text-white text-sm uppercase tracking-wider">
-            <th class="px-6 py-5 font-display font-semibold">Program</th>
-            <th class="px-6 py-5 font-display font-semibold">Highlights</th>
-            <th class="px-6 py-5 font-display font-semibold">Schedule</th>
-            <th class="px-6 py-5 font-display font-semibold">Mode</th>
-            <th class="px-6 py-5 font-display font-semibold">Fee</th>
-            <th class="px-6 py-5 font-display font-semibold text-right">Admissions</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-indigo-950/[0.07]">
-          <tr class="hover:bg-amber-50/60 transition-colors">
-            <td class="px-6 py-6"><div class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 grid place-items-center"><i data-lucide="book-open" class="w-5 h-5"></i></span><span class="font-display font-semibold">Academic Subject Coaching</span></div></td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">Small batches · experienced, polite faculty</td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">Ongoing batches · till 8 PM</td>
-            <td class="px-6 py-6"><span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800"><i data-lucide="school" class="w-3.5 h-3.5"></i> In-person · Shahdara</span></td>
-            <td class="px-6 py-6"><a href="tel:+918076787929" class="text-sm font-semibold text-indigo-700 hover:text-indigo-900 inline-flex items-center gap-1"><i data-lucide="phone" class="w-3.5 h-3.5"></i> On call</a></td>
-            <td class="px-6 py-6 text-right"><button onclick="openModal('Academic Subject Coaching')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2f2ab8] text-white text-sm font-semibold hover:bg-[#1d1b6e] transition-colors">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button></td>
-          </tr>
-          <tr class="hover:bg-amber-50/60 transition-colors">
-            <td class="px-6 py-6"><div class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 grid place-items-center"><i data-lucide="clipboard-check" class="w-5 h-5"></i></span><span class="font-display font-semibold">Weekly Test Series</span></div></td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">Tests every week, reviewed in class — “weekly tests” is a review highlight</td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">Weekly cycle</td>
-            <td class="px-6 py-6"><span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800"><i data-lucide="school" class="w-3.5 h-3.5"></i> In-person · Shahdara</span></td>
-            <td class="px-6 py-6"><a href="tel:+918076787929" class="text-sm font-semibold text-indigo-700 hover:text-indigo-900 inline-flex items-center gap-1"><i data-lucide="phone" class="w-3.5 h-3.5"></i> On call</a></td>
-            <td class="px-6 py-6 text-right"><button onclick="openModal('Weekly Test Series')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2f2ab8] text-white text-sm font-semibold hover:bg-[#1d1b6e] transition-colors">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button></td>
-          </tr>
-          <tr class="hover:bg-amber-50/60 transition-colors">
-            <td class="px-6 py-6"><div class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-700 grid place-items-center"><i data-lucide="compass" class="w-5 h-5"></i></span><span class="font-display font-semibold">Career Guidance &amp; Counselling</span></div></td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">One-to-one advice — “career advices” mentioned in 3 reviews</td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">By appointment</td>
-            <td class="px-6 py-6"><span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800"><i data-lucide="school" class="w-3.5 h-3.5"></i> In-person · Shahdara</span></td>
-            <td class="px-6 py-6"><a href="tel:+918076787929" class="text-sm font-semibold text-indigo-700 hover:text-indigo-900 inline-flex items-center gap-1"><i data-lucide="phone" class="w-3.5 h-3.5"></i> On call</a></td>
-            <td class="px-6 py-6 text-right"><button onclick="openModal('Career Guidance & Counselling')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2f2ab8] text-white text-sm font-semibold hover:bg-[#1d1b6e] transition-colors">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button></td>
-          </tr>
-          <tr class="hover:bg-amber-50/60 transition-colors">
-            <td class="px-6 py-6"><div class="flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 grid place-items-center"><i data-lucide="calendar-range" class="w-5 h-5"></i></span><span class="font-display font-semibold">Long-Term Program</span></div></td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">Multi-year support — an alumna studied here for two consecutive years</td>
-            <td class="px-6 py-6 text-sm text-indigo-950/70">1–2 year track</td>
-            <td class="px-6 py-6"><span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800"><i data-lucide="school" class="w-3.5 h-3.5"></i> In-person · Shahdara</span></td>
-            <td class="px-6 py-6"><a href="tel:+918076787929" class="text-sm font-semibold text-indigo-700 hover:text-indigo-900 inline-flex items-center gap-1"><i data-lucide="phone" class="w-3.5 h-3.5"></i> On call</a></td>
-            <td class="px-6 py-6 text-right"><button onclick="openModal('Long-Term Program (1–2 Years)')" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#2f2ab8] text-white text-sm font-semibold hover:bg-[#1d1b6e] transition-colors">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- MOBILE STACKED CARDS -->
-    <div class="md:hidden space-y-4">
-      <div class="reveal rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-5">
-        <div class="flex items-center gap-3 mb-3"><span class="w-11 h-11 rounded-xl bg-indigo-100 text-indigo-700 grid place-items-center"><i data-lucide="book-open" class="w-5 h-5"></i></span><h3 class="font-display font-semibold text-lg">Academic Subject Coaching</h3></div>
-        <dl class="text-sm space-y-2 text-indigo-950/70">
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Highlights</dt><dd>Small batches · experienced faculty</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Schedule</dt><dd>Ongoing batches · till 8 PM</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Mode</dt><dd>In-person · Shahdara</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Fee</dt><dd><a href="tel:+918076787929" class="font-semibold text-indigo-700">On call</a></dd></div>
-        </dl>
-        <button onclick="openModal('Academic Subject Coaching')" class="mt-4 w-full inline-flex justify-center items-center gap-2 px-4 py-3 rounded-xl bg-[#2f2ab8] text-white font-semibold">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
-      </div>
-      <div class="reveal rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-5">
-        <div class="flex items-center gap-3 mb-3"><span class="w-11 h-11 rounded-xl bg-amber-100 text-amber-700 grid place-items-center"><i data-lucide="clipboard-check" class="w-5 h-5"></i></span><h3 class="font-display font-semibold text-lg">Weekly Test Series</h3></div>
-        <dl class="text-sm space-y-2 text-indigo-950/70">
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Highlights</dt><dd>Weekly tests — a review highlight</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Schedule</dt><dd>Weekly cycle</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Mode</dt><dd>In-person · Shahdara</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Fee</dt><dd><a href="tel:+918076787929" class="font-semibold text-indigo-700">On call</a></dd></div>
-        </dl>
-        <button onclick="openModal('Weekly Test Series')" class="mt-4 w-full inline-flex justify-center items-center gap-2 px-4 py-3 rounded-xl bg-[#2f2ab8] text-white font-semibold">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
-      </div>
-      <div class="reveal rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-5">
-        <div class="flex items-center gap-3 mb-3"><span class="w-11 h-11 rounded-xl bg-indigo-100 text-indigo-700 grid place-items-center"><i data-lucide="compass" class="w-5 h-5"></i></span><h3 class="font-display font-semibold text-lg">Career Guidance &amp; Counselling</h3></div>
-        <dl class="text-sm space-y-2 text-indigo-950/70">
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Highlights</dt><dd>1-on-1 advice · 3 review mentions</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Schedule</dt><dd>By appointment</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Mode</dt><dd>In-person · Shahdara</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Fee</dt><dd><a href="tel:+918076787929" class="font-semibold text-indigo-700">On call</a></dd></div>
-        </dl>
-        <button onclick="openModal('Career Guidance & Counselling')" class="mt-4 w-full inline-flex justify-center items-center gap-2 px-4 py-3 rounded-xl bg-[#2f2ab8] text-white font-semibold">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
-      </div>
-      <div class="reveal rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-5">
-        <div class="flex items-center gap-3 mb-3"><span class="w-11 h-11 rounded-xl bg-amber-100 text-amber-700 grid place-items-center"><i data-lucide="calendar-range" class="w-5 h-5"></i></span><h3 class="font-display font-semibold text-lg">Long-Term Program</h3></div>
-        <dl class="text-sm space-y-2 text-indigo-950/70">
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Highlights</dt><dd>Alumna studied here 2 years straight</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Schedule</dt><dd>1–2 year track</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Mode</dt><dd>In-person · Shahdara</dd></div>
-          <div class="flex gap-2"><dt class="w-20 shrink-0 font-semibold text-indigo-950">Fee</dt><dd><a href="tel:+918076787929" class="font-semibold text-indigo-700">On call</a></dd></div>
-        </dl>
-        <button onclick="openModal('Long-Term Program (1–2 Years)')" class="mt-4 w-full inline-flex justify-center items-center gap-2 px-4 py-3 rounded-xl bg-[#2f2ab8] text-white font-semibold">Enquire <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
       </div>
     </div>
 
-    <p class="reveal mt-6 flex items-start sm:items-center gap-2.5 text-sm text-indigo-950/55">
-      <i data-lucide="info" class="w-4 h-4 mt-0.5 sm:mt-0 shrink-0 text-amber-500"></i>
-      Fees, seat availability &amp; the next batch start date are shared on call/WhatsApp — <a class="font-semibold text-indigo-800 underline decoration-amber-400 decoration-2 underline-offset-2" href="tel:+918076787929">080 767 87929</a>. The institute replies to enquiries as “AIEC Team”.
-    </p>
-  </div>
-</section>
+    <div aria-hidden="true" class="pointer-events-none absolute -bottom-8 left-0 select-none overflow-hidden font-display text-[19vw] font-bold uppercase leading-none tracking-tight text-stroke opacity-[.55]">Fingers</div>
+  </section>
 
-<!-- ══════════════ RESULTS STRIP · DARK COUNTERS ══════════════ -->
-<section class="relative bg-[#14122e] grid-bg-dark text-white py-16 sm:py-20 overflow-hidden">
-  <div aria-hidden="true" class="absolute -top-24 left-1/4 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
-  <div aria-hidden="true" class="absolute -bottom-24 right-1/4 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl"></div>
-  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <p class="reveal text-center text-sm font-bold uppercase tracking-[0.25em] text-amber-400 mb-10">Verified on Google · as listed publicly</p>
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 text-center">
-      <div class="reveal">
-        <div class="font-display font-bold text-6xl sm:text-7xl text-white"><span class="count-up" data-count="4.9" data-decimals="1">0.0</span><span class="text-amber-400 text-4xl align-top">★</span></div>
-        <p class="mt-3 text-white/55 text-sm font-medium uppercase tracking-widest">Google rating</p>
-      </div>
-      <div class="reveal" style="transition-delay:.1s">
-        <div class="font-display font-bold text-6xl sm:text-7xl text-white"><span class="count-up" data-count="125" data-decimals="0">0</span></div>
-        <p class="mt-3 text-white/55 text-sm font-medium uppercase tracking-widest">Verified reviews</p>
-      </div>
-      <div class="reveal" style="transition-delay:.2s">
-        <div class="font-display font-bold text-6xl sm:text-7xl text-white"><span class="count-up" data-count="17" data-decimals="0">0</span><span class="text-amber-400">+</span></div>
-        <p class="mt-3 text-white/55 text-sm font-medium uppercase tracking-widest">Top-topic mentions<span class="block normal-case tracking-normal text-white/35 text-xs mt-1">Experienced 8 · Polite 4 · Career 3 · Tests 2</span></p>
-      </div>
-      <div class="reveal" style="transition-delay:.3s">
-        <div class="font-display font-bold text-6xl sm:text-7xl text-white"><span class="count-up" data-count="100" data-decimals="0">0</span><span class="text-amber-400">%</span></div>
-        <p class="mt-3 text-white/55 text-sm font-medium uppercase tracking-widest">Women-owned</p>
+  <!-- MARQUEE -->
+  <section class="relative border-y border-white/[.06] bg-coal/60 py-5 backdrop-blur-sm">
+    <div class="overflow-hidden">
+      <div class="marquee-track items-center gap-10 text-[13px] font-extrabold tracking-[0.3em] uppercase text-ivory/60">
+        <div class="flex items-center gap-10 pr-10">
+          <span>Nanoplastia</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Hair Botox</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Balayage</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Keratin Spa</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Signature Facials</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Mani-Pedi</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Nail Art</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Groom Packages</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Bridal Makeup</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Academy</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+        </div>
+        <div class="flex items-center gap-10 pr-10" aria-hidden="true">
+          <span>Nanoplastia</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Hair Botox</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Balayage</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Keratin Spa</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Signature Facials</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Mani-Pedi</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Nail Art</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Groom Packages</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Bridal Makeup</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+          <span>Academy</span><i data-lucide="sparkle" class="h-4 w-4 text-gold"></i>
+        </div>
       </div>
     </div>
-    <div class="reveal mt-12 flex flex-wrap justify-center gap-3">
-      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.07] border border-white/15 text-sm font-medium"><i data-lucide="rainbow" class="w-4 h-4 text-amber-400"></i> LGBTQ+ friendly</span>
-      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.07] border border-white/15 text-sm font-medium"><i data-lucide="award" class="w-4 h-4 text-amber-400"></i> Identifies as women-owned</span>
-      <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.07] border border-white/15 text-sm font-medium"><i data-lucide="clock" class="w-4 h-4 text-amber-400"></i> Open · Closes 8:00 PM</span>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════ WHAT STUDENTS PRAISE · SNAP ROW (no teacher photos — icons only) ══════════════ -->
-<section id="praise" class="py-20 sm:py-28 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-      <div>
-        <p class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-indigo-700"><i data-lucide="heart-handshake" class="w-4 h-4"></i> What students praise most</p>
-        <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">In their words, <span class="text-[#2f2ab8]">not ours.</span></h2>
+  <!-- SERVICES : 3 cards -->
+  <section id="services" class="relative scroll-mt-28 px-5 py-24 lg:py-32">
+    <div class="bg-grid grid-fade absolute inset-0 opacity-60"></div>
+    <div class="relative mx-auto max-w-7xl">
+      <div class="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+        <div data-reveal>
+          <p class="mb-3 flex items-center gap-2 text-[11px] font-bold tracking-[0.26em] uppercase text-gold"><i data-lucide="scissors" class="h-4 w-4"></i> The Menu</p>
+          <h2 class="font-display text-[clamp(2.2rem,4.6vw,3.6rem)] font-semibold leading-[1.04] text-ivory">Signature <span class="italic gold-grad">services</span>,<br class="hidden sm:block"> played to win.</h2>
+        </div>
+        <p data-reveal data-delay="120" class="max-w-sm text-[15px] leading-relaxed text-mute">Every treatment uses professional-grade products, sterilised tools and artists who treat your chair like the final round.</p>
       </div>
-      <div class="flex gap-2">
-        <button onclick="scrollRow(-1)" aria-label="Scroll left" class="w-11 h-11 rounded-full border-2 border-indigo-950/15 grid place-items-center hover:bg-[#1d1b6e] hover:text-white hover:border-[#1d1b6e] transition-colors"><i data-lucide="arrow-left" class="w-5 h-5"></i></button>
-        <button onclick="scrollRow(1)" aria-label="Scroll right" class="w-11 h-11 rounded-full border-2 border-indigo-950/15 grid place-items-center hover:bg-[#1d1b6e] hover:text-white hover:border-[#1d1b6e] transition-colors"><i data-lucide="arrow-right" class="w-5 h-5"></i></button>
-      </div>
-    </div>
-  </div>
-  <div class="max-w-7xl mx-auto pl-4 sm:pl-6 lg:pl-8">
-    <div id="snapRow" class="snap-row flex gap-5 overflow-x-auto pb-6 pr-6">
-      <!-- card -->
-      <article class="reveal shrink-0 w-[290px] sm:w-[320px] rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-6 hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300">
-        <div class="flex items-center justify-between">
-          <span class="w-13 h-13 p-3 rounded-2xl bg-gradient-to-br from-[#2f2ab8] to-[#1d1b6e] text-white grid place-items-center shadow-lg shadow-indigo-800/30"><i data-lucide="graduation-cap" class="w-6 h-6"></i></span>
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-700 border border-amber-500/30">8 mentions</span>
-        </div>
-        <h3 class="font-display font-bold text-xl mt-5">Experienced Teachers</h3>
-        <p class="mt-2 text-sm text-indigo-950/60 leading-relaxed">“Great place for learning and well experienced teachers are here.”</p>
-        <p class="mt-4 text-xs text-indigo-950/40 font-medium uppercase tracking-wider">— Google review summary</p>
-      </article>
-      <article class="reveal shrink-0 w-[290px] sm:w-[320px] rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-6 hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300" style="transition-delay:.05s">
-        <div class="flex items-center justify-between">
-          <span class="p-3 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-white grid place-items-center shadow-lg shadow-amber-500/30"><i data-lucide="smile" class="w-6 h-6"></i></span>
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-700 border border-amber-500/30">4 mentions</span>
-        </div>
-        <h3 class="font-display font-bold text-xl mt-5">Polite &amp; Professional</h3>
-        <p class="mt-2 text-sm text-indigo-950/60 leading-relaxed">“The teachers are very professional, have very good way of communication.”</p>
-        <p class="mt-4 text-xs text-indigo-950/40 font-medium uppercase tracking-wider">— Google review summary</p>
-      </article>
-      <article class="reveal shrink-0 w-[290px] sm:w-[320px] rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-6 hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300" style="transition-delay:.1s">
-        <div class="flex items-center justify-between">
-          <span class="p-3 rounded-2xl bg-gradient-to-br from-[#2f2ab8] to-[#1d1b6e] text-white grid place-items-center shadow-lg shadow-indigo-800/30"><i data-lucide="compass" class="w-6 h-6"></i></span>
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-700 border border-amber-500/30">3 mentions</span>
-        </div>
-        <h3 class="font-display font-bold text-xl mt-5">Career Advice</h3>
-        <p class="mt-2 text-sm text-indigo-950/60 leading-relaxed">“Your guidance made me a capable and confident student at my subjects.”</p>
-        <p class="mt-4 text-xs text-indigo-950/40 font-medium uppercase tracking-wider">— Disha D., Google review</p>
-      </article>
-      <article class="reveal shrink-0 w-[290px] sm:w-[320px] rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-6 hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300" style="transition-delay:.15s">
-        <div class="flex items-center justify-between">
-          <span class="p-3 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-white grid place-items-center shadow-lg shadow-amber-500/30"><i data-lucide="clipboard-check" class="w-6 h-6"></i></span>
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-700 border border-amber-500/30">2 mentions</span>
-        </div>
-        <h3 class="font-display font-bold text-xl mt-5">Weekly Tests</h3>
-        <p class="mt-2 text-sm text-indigo-950/60 leading-relaxed">A rhythm of weekly assessments keeps every batch sharp and exam-ready.</p>
-        <p class="mt-4 text-xs text-indigo-950/40 font-medium uppercase tracking-wider">— Review topic on Google</p>
-      </article>
-      <article class="reveal shrink-0 w-[290px] sm:w-[320px] rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-6 hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300" style="transition-delay:.2s">
-        <div class="flex items-center justify-between">
-          <span class="p-3 rounded-2xl bg-gradient-to-br from-[#2f2ab8] to-[#1d1b6e] text-white grid place-items-center shadow-lg shadow-indigo-800/30"><i data-lucide="users" class="w-6 h-6"></i></span>
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-700 border border-amber-500/30">Summary highlight</span>
-        </div>
-        <h3 class="font-display font-bold text-xl mt-5">Small Batches</h3>
-        <p class="mt-2 text-sm text-indigo-950/60 leading-relaxed">“They provide best facilities, small batches, good.”</p>
-        <p class="mt-4 text-xs text-indigo-950/40 font-medium uppercase tracking-wider">— Google review summary</p>
-      </article>
-      <article class="reveal shrink-0 w-[290px] sm:w-[320px] rounded-3xl bg-white border border-indigo-950/10 shadow-lg shadow-indigo-950/[0.06] p-6 hover:-translate-y-1.5 hover:shadow-xl transition-all duration-300" style="transition-delay:.25s">
-        <div class="flex items-center justify-between">
-          <span class="p-3 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-white grid place-items-center shadow-lg shadow-amber-500/30"><i data-lucide="shield-check" class="w-6 h-6"></i></span>
-          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-400/15 text-amber-700 border border-amber-500/30">Alumna verified</span>
-        </div>
-        <h3 class="font-display font-bold text-xl mt-5">Clean &amp; Safe Campus</h3>
-        <p class="mt-2 text-sm text-indigo-950/60 leading-relaxed">“Amazing teachers, clean environment and also the safety was kept first at this covid time.”</p>
-        <p class="mt-4 text-xs text-indigo-950/40 font-medium uppercase tracking-wider">— Riya A., studied 2 years</p>
-      </article>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════ REVIEWS ══════════════ -->
-<section id="reviews" class="py-20 sm:py-28 bg-white border-y border-indigo-950/10">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-      <div>
-        <p class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-indigo-700"><i data-lucide="message-square-quote" class="w-4 h-4"></i> Google reviews</p>
-        <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3">Rated <span class="text-[#2f2ab8]">4.9</span> by the people<br class="hidden sm:block"/> who studied here.</h2>
-      </div>
-      <div class="flex items-center gap-4">
-        <div class="star-filled flex gap-0.5 text-amber-500">
-          <i data-lucide="star" class="w-6 h-6"></i><i data-lucide="star" class="w-6 h-6"></i><i data-lucide="star" class="w-6 h-6"></i><i data-lucide="star" class="w-6 h-6"></i><i data-lucide="star" class="w-6 h-6"></i>
-        </div>
-        <span class="text-sm text-indigo-950/50 font-medium">125 reviews</span>
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- card 1 -->
+        <article data-reveal class="group glass lift relative flex flex-col overflow-hidden rounded-[24px]">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.pexels.com/photos/8468125/pexels-photo-8468125.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="TGF artist applying balayage colour with foils" class="card-img h-full w-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/20 to-transparent"></div>
+            <span class="glass absolute left-4 top-4 rounded-full px-3.5 py-1.5 text-[10px] font-extrabold tracking-[0.18em] uppercase text-gold">Most booked</span>
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <div class="mb-3 flex items-center gap-2.5 text-gold"><i data-lucide="scissors" class="h-5 w-5"></i><span class="text-[11px] font-extrabold tracking-[0.22em] uppercase">01 · Hair</span></div>
+            <h3 class="font-display text-[26px] font-semibold leading-tight text-ivory">Hair Artistry <span class="italic text-gold">&amp; Repair</span></h3>
+            <ul class="mt-5 flex-1 space-y-2.5 text-[14px] text-mute">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Nanoplastia &amp; Hair Botox treatments</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Balayage, global colour &amp; correction</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Keratin, smoothening &amp; hair spa rituals</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Precision cuts &amp; styling for all</li>
+            </ul>
+            <a data-wa-service="Hair Artistry & Repair" href="#" class="mt-7 flex items-center justify-between rounded-2xl border border-white/10 px-5 py-3.5 text-[13px] font-extrabold tracking-wide text-ivory transition hover:border-gold/50 hover:text-gold">
+              Book this service <i data-lucide="arrow-up-right" class="h-4.5 w-4.5 text-gold"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- card 2 -->
+        <article data-reveal data-delay="120" class="group glass lift relative flex flex-col overflow-hidden rounded-[24px]">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.pexels.com/photos/3985338/pexels-photo-3985338.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Client relaxing during a signature facial at TGF" class="card-img h-full w-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/20 to-transparent"></div>
+            <span class="glass absolute left-4 top-4 rounded-full px-3.5 py-1.5 text-[10px] font-extrabold tracking-[0.18em] uppercase text-gold">Glow ritual</span>
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <div class="mb-3 flex items-center gap-2.5 text-gold"><i data-lucide="sparkles" class="h-5 w-5"></i><span class="text-[11px] font-extrabold tracking-[0.22em] uppercase">02 · Skin</span></div>
+            <h3 class="font-display text-[26px] font-semibold leading-tight text-ivory">Skin <span class="italic text-gold">&amp; Glow Rituals</span></h3>
+            <ul class="mt-5 flex-1 space-y-2.5 text-[14px] text-mute">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Signature facials &amp; clean-ups</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> De-tan, bleach &amp; polishing</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Threading &amp; full-body waxing</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Party &amp; event glow packages</li>
+            </ul>
+            <a data-wa-service="Skin & Glow Rituals" href="#" class="mt-7 flex items-center justify-between rounded-2xl border border-white/10 px-5 py-3.5 text-[13px] font-extrabold tracking-wide text-ivory transition hover:border-gold/50 hover:text-gold">
+              Book this service <i data-lucide="arrow-up-right" class="h-4.5 w-4.5 text-gold"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- card 3 -->
+        <article data-reveal data-delay="240" class="group glass lift relative flex flex-col overflow-hidden rounded-[24px]">
+          <div class="relative h-56 overflow-hidden">
+            <img src="https://images.pexels.com/photos/5238015/pexels-photo-5238015.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Luxury manicure in progress at TGF nail station" class="card-img h-full w-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/20 to-transparent"></div>
+            <span class="glass absolute left-4 top-4 rounded-full px-3.5 py-1.5 text-[10px] font-extrabold tracking-[0.18em] uppercase text-gold">Head-to-toe</span>
+          </div>
+          <div class="flex flex-1 flex-col p-7">
+            <div class="mb-3 flex items-center gap-2.5 text-gold"><i data-lucide="hand" class="h-5 w-5"></i><span class="text-[11px] font-extrabold tracking-[0.22em] uppercase">03 · Nails &amp; Grooming</span></div>
+            <h3 class="font-display text-[26px] font-semibold leading-tight text-ivory">Nails, Hands <span class="italic text-gold">&amp; Grooming</span></h3>
+            <ul class="mt-5 flex-1 space-y-2.5 text-[14px] text-mute">
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Manicure, pedicure &amp; callus care</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Nail art, gel polish &amp; extensions</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Groom packages &amp; beard styling</li>
+              <li class="flex items-center gap-2.5"><i data-lucide="check" class="h-4 w-4 shrink-0 text-gold"></i> Head massage &amp; de-stress add-ons</li>
+            </ul>
+            <a data-wa-service="Nails, Hands & Grooming" href="#" class="mt-7 flex items-center justify-between rounded-2xl border border-white/10 px-5 py-3.5 text-[13px] font-extrabold tracking-wide text-ivory transition hover:border-gold/50 hover:text-gold">
+              Book this service <i data-lucide="arrow-up-right" class="h-4.5 w-4.5 text-gold"></i>
+            </a>
+          </div>
+        </article>
       </div>
     </div>
+  </section>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- Riya -->
-      <figure class="reveal flex flex-col rounded-3xl bg-[#fbfaf4] border border-indigo-950/10 p-7 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-950/10 transition-all duration-300">
-        <div class="flex items-center gap-3">
-          <span class="w-11 h-11 rounded-full bg-[#2f2ab8] text-white grid place-items-center font-display font-bold">R</span>
-          <div><figcaption class="font-display font-semibold">Riya Argar</figcaption><p class="text-xs text-indigo-950/45">1 review · 3 photos · 4 years ago</p></div>
+  <!-- FEATURE PILLARS : 4 col -->
+  <section id="why" class="relative scroll-mt-28 border-y border-white/[.06] bg-coal/40 px-5 py-24 lg:py-28">
+    <div class="relative mx-auto max-w-7xl">
+      <div data-reveal class="mb-14 max-w-2xl">
+        <p class="mb-3 flex items-center gap-2 text-[11px] font-bold tracking-[0.26em] uppercase text-gold"><i data-lucide="trophy" class="h-4 w-4"></i> Why TGF wins</p>
+        <h2 class="font-display text-[clamp(2.2rem,4.6vw,3.6rem)] font-semibold leading-[1.04] text-ivory">Four reasons the <span class="italic gold-grad">game</span> is already ours.</h2>
+      </div>
+
+      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div data-reveal class="glass lift rounded-[22px] p-7">
+          <span class="font-display text-sm italic text-gold/70">01</span>
+          <div class="mt-4 mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold"><i data-lucide="star" class="star-fill h-5.5 w-5.5"></i></div>
+          <h3 class="text-[17px] font-extrabold text-ivory">4.9 stars, 170+ reviews</h3>
+          <p class="mt-2.5 text-[13.5px] leading-relaxed text-mute">One of Shahdara&#8217;s highest-rated salons on Google — earned one client at a time, review after verified review.</p>
+          <p class="mt-4 border-t border-white/10 pt-4 font-display text-3xl font-semibold gold-grad">4.9<span class="text-lg text-mute">/5</span></p>
         </div>
-        <div class="star-filled flex gap-0.5 text-amber-500 mt-4"><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i></div>
-        <blockquote class="mt-4 text-[15px] leading-relaxed text-indigo-950/75 grow">“Well…. I have studied in this institute for simultaneous two years and I have no words to thank the faculty for providing us with such amazing teachers, clean environment and also the safety was kept first at this covid time. Thank you …”</blockquote>
-        <div class="mt-5 rounded-xl bg-white border border-indigo-950/10 px-4 py-3 text-xs text-indigo-950/60">
-          <p class="font-semibold text-indigo-950/75 flex items-center gap-1.5 mb-1"><i data-lucide="corner-down-right" class="w-3.5 h-3.5 text-amber-500"></i> Response from the owner</p>
-          “Thanks for your valuable believe on institute — Regard, AIEC TEAM”
+        <div data-reveal data-delay="100" class="glass lift rounded-[22px] p-7">
+          <span class="font-display text-sm italic text-gold/70">02</span>
+          <div class="mt-4 mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold"><i data-lucide="shield-check" class="h-5.5 w-5.5"></i></div>
+          <h3 class="text-[17px] font-extrabold text-ivory">Hygiene-first stations</h3>
+          <p class="mt-2.5 text-[13.5px] leading-relaxed text-mute">Sterilised tools, fresh linen and sanitised chairs before every single seat. Clients call it out in their reviews — often.</p>
+          <p class="mt-4 border-t border-white/10 pt-4 font-display text-3xl font-semibold gold-grad">100<span class="text-lg text-mute">%</span></p>
         </div>
-      </figure>
-      <!-- Kavita -->
-      <figure class="reveal flex flex-col rounded-3xl bg-[#fbfaf4] border border-indigo-950/10 p-7 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-950/10 transition-all duration-300" style="transition-delay:.1s">
-        <div class="flex items-center gap-3">
-          <span class="w-11 h-11 rounded-full bg-amber-500 text-white grid place-items-center font-display font-bold">K</span>
-          <div><figcaption class="font-display font-semibold">Kavita Choudhary</figcaption><p class="text-xs text-indigo-950/45">1 review · 3 photos · 4 years ago</p></div>
+        <div data-reveal data-delay="200" class="glass lift rounded-[22px] p-7">
+          <span class="font-display text-sm italic text-gold/70">03</span>
+          <div class="mt-4 mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold"><i data-lucide="wand-sparkles" class="h-5.5 w-5.5"></i></div>
+          <h3 class="text-[17px] font-extrabold text-ivory">Specialist artists</h3>
+          <p class="mt-2.5 text-[13.5px] leading-relaxed text-mute">Colour-correction expert <span class="font-bold text-ivory">Makbul</span> and team rescue the toughest hair jobs — dye-coated, damaged, done-wrong.</p>
+          <p class="mt-4 border-t border-white/10 pt-4 font-display text-3xl font-semibold gold-grad">Senior<span class="text-lg text-mute"> only</span></p>
         </div>
-        <div class="star-filled flex gap-0.5 text-amber-500 mt-4"><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i></div>
-        <blockquote class="mt-4 text-[15px] leading-relaxed text-indigo-950/75 grow">“These institute is very good — all the teachers teach very well. All facilities are provided where all the teachers are very good and motivate. Thank you …”</blockquote>
-        <div class="mt-5 rounded-xl bg-white border border-indigo-950/10 px-4 py-3 text-xs text-indigo-950/60">
-          <p class="font-semibold text-indigo-950/75 flex items-center gap-1.5 mb-1"><i data-lucide="corner-down-right" class="w-3.5 h-3.5 text-amber-500"></i> Response from the owner</p>
-          “Thanks for your valuable believe on institute — Regard, AIEC TEAM”
+        <div data-reveal data-delay="300" class="glass lift rounded-[22px] p-7">
+          <span class="font-display text-sm italic text-gold/70">04</span>
+          <div class="mt-4 mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10 text-gold"><i data-lucide="graduation-cap" class="h-5.5 w-5.5"></i></div>
+          <h3 class="text-[17px] font-extrabold text-ivory">Salon + Academy</h3>
+          <p class="mt-2.5 text-[13.5px] leading-relaxed text-mute">Learn hair, skin &amp; nails on a live studio floor from working artists. Admissions open for the next batch.</p>
+          <a data-wa-service="Academy Course Enquiry" href="#" class="mt-4 flex items-center gap-1.5 border-t border-white/10 pt-4 text-[13px] font-extrabold text-gold transition hover:gap-2.5">Join the academy <i data-lucide="arrow-right" class="h-4 w-4"></i></a>
         </div>
-      </figure>
-      <!-- Disha -->
-      <figure class="reveal flex flex-col rounded-3xl bg-[#fbfaf4] border border-indigo-950/10 p-7 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-950/10 transition-all duration-300" style="transition-delay:.2s">
-        <div class="flex items-center gap-3">
-          <span class="w-11 h-11 rounded-full bg-[#1d1b6e] text-white grid place-items-center font-display font-bold">D</span>
-          <div><figcaption class="font-display font-semibold">Disha Dagar</figcaption><p class="text-xs text-indigo-950/45">3 reviews · 3 years ago</p></div>
-        </div>
-        <div class="star-filled flex gap-0.5 text-amber-500 mt-4"><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i><i data-lucide="star" class="w-4 h-4"></i></div>
-        <blockquote class="mt-4 text-[15px] leading-relaxed text-indigo-950/75 grow">“Thank you Alpha Institute and amazing teachers. Your expertise in teaching has put my mind at ease and your guidance made me a capable and confident student at my subjects. I am really glad being a part of Alpha Institute…”</blockquote>
-        <div class="mt-5 rounded-xl bg-white border border-indigo-950/10 px-4 py-3 text-xs text-indigo-950/60">
-          <p class="font-semibold text-indigo-950/75 flex items-center gap-1.5 mb-1"><i data-lucide="corner-down-right" class="w-3.5 h-3.5 text-amber-500"></i> Response from the owner</p>
-          “Thanku for your valuable feedback back and trust”
-        </div>
-      </figure>
+      </div>
+
+      <div data-reveal class="glass mt-14 grid grid-cols-2 gap-y-8 rounded-[22px] px-8 py-9 md:grid-cols-4">
+        <div class="text-center"><p class="font-display text-4xl font-semibold text-ivory">4.9</p><p class="mt-1.5 text-[11px] font-bold tracking-[0.2em] uppercase text-mute">Google rating</p></div>
+        <div class="text-center"><p class="font-display text-4xl font-semibold text-ivory">170+</p><p class="mt-1.5 text-[11px] font-bold tracking-[0.2em] uppercase text-mute">Verified reviews</p></div>
+        <div class="text-center"><p class="font-display text-4xl font-semibold text-ivory">30+</p><p class="mt-1.5 text-[11px] font-bold tracking-[0.2em] uppercase text-mute">Studio services</p></div>
+        <div class="text-center"><p class="font-display text-4xl font-semibold text-ivory">7<span class="text-2xl text-mute">days</span></p><p class="mt-1.5 text-[11px] font-bold tracking-[0.2em] uppercase text-mute">Open every week</p></div>
+      </div>
     </div>
-    <p class="reveal mt-8 text-center text-sm text-indigo-950/45">+ 122 more reviews on Google · Review topics include <span class="font-semibold text-indigo-950/70">experienced teachers, polite teachers, career advices, weekly tests</span> &amp; 6 more.</p>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════ VISIT / CONTACT ══════════════ -->
-<section id="visit" class="py-20 sm:py-28">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-10 items-stretch">
-      <div class="reveal">
-        <p class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-indigo-700"><i data-lucide="map-pin" class="w-4 h-4"></i> Visit the campus</p>
-        <h2 class="font-display font-bold text-4xl sm:text-5xl mt-3 mb-8">One street away from<br/><span class="text-[#2f2ab8]">your next step.</span></h2>
+  <!-- REVIEWS : wall -->
+  <section id="reviews" class="relative scroll-mt-28 px-5 py-24 lg:py-32">
+    <div class="bg-grid grid-fade absolute inset-0 opacity-50"></div>
+    <div class="relative mx-auto max-w-7xl">
+      <div class="grid gap-10 lg:grid-cols-[0.9fr_1.4fr] lg:gap-14">
 
-        <ul class="space-y-5">
-          <li class="flex gap-4">
-            <span class="w-12 h-12 shrink-0 rounded-2xl bg-white border border-indigo-950/10 grid place-items-center text-indigo-700 shadow-sm"><i data-lucide="map-pin" class="w-5 h-5"></i></span>
-            <div><p class="font-display font-semibold">Address</p><p class="text-indigo-950/60 text-sm leading-relaxed">1/7122, Post Office Street, Shivaji Park,<br/>Shahdara, Delhi — 110032</p></div>
-          </li>
-          <li class="flex gap-4">
-            <span class="w-12 h-12 shrink-0 rounded-2xl bg-white border border-indigo-950/10 grid place-items-center text-indigo-700 shadow-sm"><i data-lucide="hash" class="w-5 h-5"></i></span>
-            <div><p class="font-display font-semibold">Plus code</p><p class="text-indigo-950/60 text-sm">M7PP+6F Delhi</p></div>
-          </li>
-          <li class="flex gap-4">
-            <span class="w-12 h-12 shrink-0 rounded-2xl bg-white border border-indigo-950/10 grid place-items-center text-indigo-700 shadow-sm"><i data-lucide="phone" class="w-5 h-5"></i></span>
-            <div><p class="font-display font-semibold">Admissions phone</p><a href="tel:+918076787929" class="text-indigo-700 font-semibold text-sm hover:underline decoration-amber-400 decoration-2 underline-offset-2">080 767 87929</a></div>
-          </li>
-          <li class="flex gap-4">
-            <span class="w-12 h-12 shrink-0 rounded-2xl bg-white border border-indigo-950/10 grid place-items-center text-indigo-700 shadow-sm"><i data-lucide="clock" class="w-5 h-5"></i></span>
-            <div><p class="font-display font-semibold">Hours</p><p class="text-indigo-950/60 text-sm">Open · Closes 8:00 PM <span class="text-indigo-950/40">(as listed on Google)</span></p></div>
-          </li>
-          <li class="flex gap-4">
-            <span class="w-12 h-12 shrink-0 rounded-2xl bg-white border border-indigo-950/10 grid place-items-center text-indigo-700 shadow-sm"><i data-lucide="badge-check" class="w-5 h-5"></i></span>
-            <div><p class="font-display font-semibold">Attributes</p>
-              <div class="flex flex-wrap gap-2 mt-1.5">
-                <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-white border border-indigo-950/10"><i data-lucide="rainbow" class="w-3.5 h-3.5 text-indigo-600"></i> LGBTQ+ friendly</span>
-                <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-white border border-indigo-950/10"><i data-lucide="award" class="w-3.5 h-3.5 text-amber-600"></i> Women-owned</span>
+        <div data-reveal class="lg:sticky lg:top-32 lg:self-start">
+          <p class="mb-3 flex items-center gap-2 text-[11px] font-bold tracking-[0.26em] uppercase text-gold"><i data-lucide="message-square-heart" class="h-4 w-4"></i> The scoreboard</p>
+          <h2 class="font-display text-[clamp(2.2rem,4.4vw,3.4rem)] font-semibold leading-[1.05] text-ivory">Clients keep <span class="italic gold-grad">score</span><br>for us.</h2>
+
+          <div class="glass mt-9 rounded-[24px] p-8">
+            <div class="flex items-end gap-4">
+              <p class="font-display text-[76px] font-semibold leading-none gold-grad">4.9</p>
+              <div class="pb-2.5">
+                <div class="star-fill flex items-center gap-1 text-gold">
+                  <i data-lucide="star" class="h-4.5 w-4.5"></i><i data-lucide="star" class="h-4.5 w-4.5"></i><i data-lucide="star" class="h-4.5 w-4.5"></i><i data-lucide="star" class="h-4.5 w-4.5"></i><i data-lucide="star" class="h-4.5 w-4.5"></i>
+                </div>
+                <p class="mt-1.5 text-sm font-semibold text-mute">170 Google reviews</p>
               </div>
             </div>
-          </li>
-        </ul>
-
-        <div class="mt-9 flex flex-wrap gap-3">
-          <a href="https://www.google.com/maps/dir/?api=1&destination=1%2F7122%2C+Post+Office+Street%2C+Shivaji+Park%2C+Shahdara%2C+Delhi+110032" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-[#1d1b6e] text-white font-semibold shadow-lg shadow-indigo-900/25 hover:-translate-y-0.5 transition-all"><i data-lucide="navigation" class="w-4 h-4 text-amber-400"></i> Get Directions</a>
-          <a href="https://wa.me/918076787929?text=Hello%20Alpha%20Institute!%20I%27d%20like%20to%20know%20about%20admissions." target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-emerald-500 text-white font-semibold shadow-lg shadow-emerald-600/25 hover:-translate-y-0.5 transition-all"><i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp</a>
-          <a href="tel:+918076787929" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white border-2 border-indigo-950/10 font-semibold hover:border-amber-500 hover:-translate-y-0.5 transition-all"><i data-lucide="phone-call" class="w-4 h-4 text-indigo-700"></i> Call Now</a>
+            <div class="mt-6 space-y-2.5">
+              <div class="flex items-center gap-3 text-[11px] font-bold text-mute"><span class="w-2">5</span><div class="h-1.5 flex-1 overflow-hidden rounded-full bg-white/8"><div class="h-full w-[93%] rounded-full bg-gold"></div></div></div>
+              <div class="flex items-center gap-3 text-[11px] font-bold text-mute"><span class="w-2">4</span><div class="h-1.5 flex-1 overflow-hidden rounded-full bg-white/8"><div class="h-full w-[5%] rounded-full bg-gold/60"></div></div></div>
+              <div class="flex items-center gap-3 text-[11px] font-bold text-mute"><span class="w-2">3</span><div class="h-1.5 flex-1 overflow-hidden rounded-full bg-white/8"><div class="h-full w-[1%] rounded-full bg-gold/40"></div></div></div>
+              <div class="flex items-center gap-3 text-[11px] font-bold text-mute"><span class="w-2">2</span><div class="h-1.5 flex-1 overflow-hidden rounded-full bg-white/8"><div class="h-full w-[1%] rounded-full bg-gold/30"></div></div></div>
+              <div class="flex items-center gap-3 text-[11px] font-bold text-mute"><span class="w-2">1</span><div class="h-1.5 flex-1 overflow-hidden rounded-full bg-white/8"><div class="h-full w-[1%] rounded-full bg-gold/20"></div></div></div>
+            </div>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="rounded-full bg-gold/10 px-3 py-1.5 text-[11px] font-bold text-gold">nanoplastia · 7</span>
+              <span class="rounded-full bg-gold/10 px-3 py-1.5 text-[11px] font-bold text-gold">hair botox · 7</span>
+              <span class="rounded-full bg-gold/10 px-3 py-1.5 text-[11px] font-bold text-gold">balayage · 3</span>
+              <span class="rounded-full bg-gold/10 px-3 py-1.5 text-[11px] font-bold text-gold">groom package · 2</span>
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=The+Game+Of+Fingers+Salon+%26+Academy+Shahdara+Delhi" target="_blank" rel="noopener" class="mt-7 flex items-center justify-center gap-2.5 rounded-2xl border border-gold/40 py-3.5 text-[13px] font-extrabold text-gold transition hover:bg-gold hover:text-noir">
+              <i data-lucide="pen-line" class="h-4 w-4"></i> Write a review on Google
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="reveal relative rounded-[2rem] overflow-hidden border border-indigo-950/10 shadow-2xl shadow-indigo-950/10 min-h-[380px] lg:min-h-0">
-        <iframe title="Map — Alpha Institute, Shivaji Park, Shahdara, Delhi" src="https://www.google.com/maps?q=Alpha+Institute,+1%2F7122,+Post+Office+Street,+Shivaji+Park,+Shahdara,+Delhi+110032&output=embed" class="absolute inset-0 w-full h-full" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur rounded-2xl shadow-lg px-4 py-3 flex items-center gap-3 border border-indigo-950/10">
-          <span class="w-9 h-9 rounded-xl bg-[#1d1b6e] text-white grid place-items-center font-display font-bold">α</span>
-          <span class="text-sm"><strong class="block font-display">Alpha Institute</strong><span class="text-xs text-indigo-950/55">4.9★ · Coaching Center · till 8 PM</span></span>
+        <div class="grid content-start gap-5 sm:grid-cols-2">
+          <figure data-reveal class="glass lift rounded-[22px] p-7">
+            <div class="flex items-center gap-3.5">
+              <span class="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-gold to-[#9c6b4d] font-display text-lg font-semibold italic text-noir">A</span>
+              <div>
+                <figcaption class="text-[14.5px] font-extrabold text-ivory">Apoorvi</figcaption>
+                <p class="text-[11.5px] font-semibold text-mute">1 month ago · Google</p>
+              </div>
+              <span class="star-fill ml-auto flex gap-0.5 text-gold"><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i></span>
+            </div>
+            <blockquote class="mt-4.5 text-[14px] leading-relaxed text-ivory/80">&#8220;Best salon experience ever! Staff was super professional, hygienic and so welcoming. Service was right on time and the result was better than expected. The ambience is so relaxing — highly recommended, will definitely visit again.&#8221;</blockquote>
+            <p class="mt-4 flex items-center gap-1.5 text-[11px] font-bold tracking-wide text-gold/90 uppercase"><i data-lucide="badge-check" class="h-3.5 w-3.5"></i> Posted on Google</p>
+          </figure>
+
+          <figure data-reveal data-delay="100" class="glass lift rounded-[22px] p-7">
+            <div class="flex items-center gap-3.5">
+              <span class="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#caa17e] to-[#7c4f38] font-display text-lg font-semibold italic text-noir">V</span>
+              <div>
+                <figcaption class="text-[14.5px] font-extrabold text-ivory">Varsha Sharma</figcaption>
+                <p class="text-[11.5px] font-semibold text-mute">5 months ago · Google</p>
+              </div>
+              <span class="star-fill ml-auto flex gap-0.5 text-gold"><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i></span>
+            </div>
+            <blockquote class="mt-4.5 text-[14px] leading-relaxed text-ivory/80">&#8220;My hair was badly dye-coated and removing it was a big challenge. But the TGF team — especially Makbul — gave it their very best. Now I have a hair colour I truly love. Thank you so much!&#8221;</blockquote>
+            <p class="mt-4 flex items-center gap-1.5 text-[11px] font-bold tracking-wide text-gold/90 uppercase"><i data-lucide="badge-check" class="h-3.5 w-3.5"></i> Colour correction</p>
+          </figure>
+
+          <figure data-reveal data-delay="200" class="glass lift rounded-[22px] p-7">
+            <div class="flex items-center gap-3.5">
+              <span class="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#e2c3ab] to-[#8a5a40] font-display text-lg font-semibold italic text-noir">R</span>
+              <div>
+                <figcaption class="text-[14.5px] font-extrabold text-ivory">Verified Client</figcaption>
+                <p class="text-[11.5px] font-semibold text-mute">Recent · Google</p>
+              </div>
+              <span class="star-fill ml-auto flex gap-0.5 text-gold"><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i></span>
+            </div>
+            <blockquote class="mt-4.5 text-[14px] leading-relaxed text-ivory/80">&#8220;Great experience — the staff behaviour is too good and the service is excellent.&#8221;</blockquote>
+            <p class="mt-4 flex items-center gap-1.5 text-[11px] font-bold tracking-wide text-gold/90 uppercase"><i data-lucide="badge-check" class="h-3.5 w-3.5"></i> Posted on Google</p>
+          </figure>
+
+          <figure data-reveal data-delay="300" class="glass lift rounded-[22px] p-7">
+            <div class="flex items-center gap-3.5">
+              <span class="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#d8b191] to-[#6e4530] font-display text-lg font-semibold italic text-noir">S</span>
+              <div>
+                <figcaption class="text-[14.5px] font-extrabold text-ivory">Verified Client</figcaption>
+                <p class="text-[11.5px] font-semibold text-mute">Recent · Google</p>
+              </div>
+              <span class="star-fill ml-auto flex gap-0.5 text-gold"><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i><i data-lucide="star" class="h-3.5 w-3.5"></i></span>
+            </div>
+            <blockquote class="mt-4.5 text-[14px] leading-relaxed text-ivory/80">&#8220;Got my facial, manicure-pedicure and hair spa done here. The pampering was completely worth it.&#8221;</blockquote>
+            <p class="mt-4 flex items-center gap-1.5 text-[11px] font-bold tracking-wide text-gold/90 uppercase"><i data-lucide="badge-check" class="h-3.5 w-3.5"></i> Hair spa · Mani-pedi</p>
+          </figure>
+
+          <a data-reveal data-delay="360" href="https://www.google.com/maps/search/?api=1&query=The+Game+Of+Fingers+Salon+%26+Academy+Shahdara+Delhi" target="_blank" rel="noopener" class="group flex items-center justify-between rounded-[22px] border border-dashed border-gold/35 p-7 transition hover:border-gold hover:bg-gold/[.05] sm:col-span-2">
+            <div>
+              <p class="font-display text-xl font-semibold italic text-ivory">Read all 170 reviews</p>
+              <p class="mt-1 text-[13px] text-mute">The full scoreboard lives on Google Maps.</p>
+            </div>
+            <span class="flex h-12 w-12 items-center justify-center rounded-full bg-gold/10 text-gold transition group-hover:bg-gold group-hover:text-noir"><i data-lucide="arrow-up-right" class="h-5 w-5"></i></span>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════ CTA BANNER ══════════════ -->
-<section class="relative overflow-hidden bg-[#1d1b6e] grid-bg-dark text-white py-20 sm:py-24">
-  <div aria-hidden="true" class="absolute -left-24 top-0 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl"></div>
-  <div aria-hidden="true" class="absolute -right-24 bottom-0 w-96 h-96 bg-indigo-500/25 rounded-full blur-3xl"></div>
-  <div class="relative max-w-4xl mx-auto px-4 text-center">
-    <p class="font-hindi text-amber-400 font-bold text-xl sm:text-2xl">अल्फा इंस्टीट्यूट</p>
-    <h2 class="reveal font-display font-bold text-4xl sm:text-6xl mt-3 leading-tight">Admissions are open.<br/>Talk to us <span class="text-amber-400">today.</span></h2>
-    <p class="reveal mt-5 text-white/60 text-lg max-w-xl mx-auto">Small batches fill quickly. Call or WhatsApp for the next batch start date, timings and fee details — straight from the AIEC team.</p>
-    <div class="reveal mt-9 flex flex-wrap justify-center gap-3">
-      <button onclick="openModal()" class="inline-flex items-center gap-2.5 px-8 py-4 rounded-2xl bg-amber-400 text-[#171640] font-display font-bold text-lg shadow-xl shadow-amber-500/25 hover:-translate-y-1 hover:bg-amber-300 transition-all"><i data-lucide="sparkles" class="w-5 h-5"></i> Enquire Now</button>
-      <a href="tel:+918076787929" class="inline-flex items-center gap-2.5 px-8 py-4 rounded-2xl bg-white/10 border border-white/20 font-display font-semibold text-lg hover:bg-white/20 hover:-translate-y-1 transition-all"><i data-lucide="phone-call" class="w-5 h-5 text-amber-400"></i> 080 767 87929</a>
+  <!-- BRIDAL / GROOM BANNER -->
+  <section class="px-5 pb-24 lg:pb-32">
+    <div data-reveal class="group relative mx-auto max-w-7xl overflow-hidden rounded-[28px] border border-white/10">
+      <img src="https://images.pexels.com/photos/6435273/pexels-photo-6435273.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=1600" alt="Indian bride getting ready at TGF Salon — bridal and groom packages" class="card-img h-[440px] w-full object-cover" loading="lazy">
+      <div class="absolute inset-0 bg-gradient-to-r from-noir/95 via-noir/60 to-noir/10"></div>
+      <div class="absolute inset-0 flex flex-col justify-center p-8 sm:p-14">
+        <p class="mb-3 flex items-center gap-2 text-[11px] font-bold tracking-[0.26em] uppercase text-gold"><i data-lucide="crown" class="h-4 w-4"></i> Wedding season ready</p>
+        <h2 class="max-w-xl font-display text-[clamp(1.9rem,4vw,3.2rem)] font-semibold leading-[1.06] text-ivory">Bridal glow, <span class="italic gold-grad">groom</span> swagger — one address.</h2>
+        <p class="mt-4 max-w-md text-[15px] leading-relaxed text-ivory/70">Pre-wedding packages, party makeup and full groom transformations, timed to your baraat — not the other way around.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a data-wa-service="Bridal / Groom Package" href="#" class="flex items-center gap-2.5 rounded-full bg-gold px-7 py-3.5 text-[14px] font-extrabold text-noir transition hover:bg-goldsoft">
+            <i data-lucide="message-circle" class="h-4.5 w-4.5"></i> Plan my look
+          </a>
+          <a href="https://www.instagram.com/tgfsalonandacademy" target="_blank" rel="noopener" class="flex items-center gap-2.5 rounded-full border border-white/25 px-7 py-3.5 text-[14px] font-bold text-ivory transition hover:border-gold hover:text-gold">
+            <i data-lucide="instagram" class="h-4.5 w-4.5"></i> See our work
+          </a>
+        </div>
+      </div>
     </div>
-    <p class="reveal mt-7 text-xs text-white/40 flex items-center justify-center gap-2"><i data-lucide="clock" class="w-3.5 h-3.5"></i> Open now · Closes 8:00 PM · 1/7122, Post Office Street, Shivaji Park, Shahdara</p>
-  </div>
-</section>
+  </section>
 
-<!-- ══════════════ FOOTER ══════════════ -->
-<footer class="bg-[#14122e] text-white/60 py-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-start justify-between gap-8">
+  <!-- VISIT : contact + map -->
+  <section id="visit" class="relative scroll-mt-28 border-t border-white/[.06] bg-coal/40 px-5 py-24 lg:py-32">
+    <div class="bg-grid grid-fade absolute inset-0 opacity-40"></div>
+    <div class="relative mx-auto max-w-7xl">
+      <div class="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div data-reveal>
+          <p class="mb-3 flex items-center gap-2 text-[11px] font-bold tracking-[0.26em] uppercase text-gold"><i data-lucide="map-pin" class="h-4 w-4"></i> Find the studio</p>
+          <h2 class="font-display text-[clamp(2.2rem,4.6vw,3.6rem)] font-semibold leading-[1.04] text-ivory">Come, <span class="italic gold-grad">play.</span></h2>
+        </div>
+        <p data-reveal data-delay="100" class="flex items-center gap-2.5 text-sm font-semibold">
+          <span data-open-dot class="h-2 w-2 rounded-full bg-emerald-400"></span>
+          <span data-open-status class="text-mute">Open daily · 10 AM – 9:30 PM</span>
+        </p>
+      </div>
+
+      <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+        <div data-reveal class="glass flex flex-col gap-1 rounded-[24px] p-8">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=The+Game+Of+Fingers+Salon+%26+Academy,+Shahdara,+Delhi+110032" target="_blank" rel="noopener" class="group flex items-start gap-4 rounded-2xl p-3 transition hover:bg-white/[.04]">
+            <span class="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold"><i data-lucide="map-pin" class="h-5 w-5"></i></span>
+            <span>
+              <span class="block text-[11px] font-extrabold tracking-[0.2em] uppercase text-mute">Address</span>
+              <span class="mt-1 block text-[15px] font-semibold leading-relaxed text-ivory/90">1/7782, Babarpur Main Rd, Gorakh Park East,<br>Shahdara, Delhi — 110032</span>
+            </span>
+          </a>
+          <a href="tel:+919050824008" class="group flex items-start gap-4 rounded-2xl p-3 transition hover:bg-white/[.04]">
+            <span class="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold"><i data-lucide="phone" class="h-5 w-5"></i></span>
+            <span>
+              <span class="block text-[11px] font-extrabold tracking-[0.2em] uppercase text-mute">Call / WhatsApp</span>
+              <span class="mt-1 block text-[15px] font-semibold text-ivory/90">090508 24008</span>
+            </span>
+          </a>
+          <div class="group flex items-start gap-4 rounded-2xl p-3">
+            <span class="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold"><i data-lucide="clock" class="h-5 w-5"></i></span>
+            <span>
+              <span class="block text-[11px] font-extrabold tracking-[0.2em] uppercase text-mute">Hours</span>
+              <span class="mt-1 block text-[15px] font-semibold text-ivory/90">Monday – Sunday · 10:00 AM – 9:30 PM</span>
+            </span>
+          </div>
+          <a href="https://www.instagram.com/tgfsalonandacademy" target="_blank" rel="noopener" class="group flex items-start gap-4 rounded-2xl p-3 transition hover:bg-white/[.04]">
+            <span class="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold"><i data-lucide="instagram" class="h-5 w-5"></i></span>
+            <span>
+              <span class="block text-[11px] font-extrabold tracking-[0.2em] uppercase text-mute">Instagram</span>
+              <span class="mt-1 block text-[15px] font-semibold text-ivory/90">@tgfsalonandacademy</span>
+            </span>
+          </a>
+          <button id="copyPlus" class="group flex w-full items-start gap-4 rounded-2xl p-3 text-left transition hover:bg-white/[.04]">
+            <span class="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold"><i data-lucide="hash" class="h-5 w-5"></i></span>
+            <span>
+              <span class="block text-[11px] font-extrabold tracking-[0.2em] uppercase text-mute">Plus code · tap to copy</span>
+              <span class="mt-1 block text-[15px] font-semibold text-ivory/90">M7MM+Q8 Delhi <span id="copyHint" class="ml-1 text-[11px] font-bold text-gold opacity-0 transition-opacity">copied</span></span>
+            </span>
+          </button>
+          <div class="mt-4 flex flex-col gap-3 border-t border-white/10 pt-6 sm:flex-row">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=The+Game+Of+Fingers+Salon+%26+Academy,+Shahdara,+Delhi+110032" target="_blank" rel="noopener" class="flex flex-1 items-center justify-center gap-2.5 rounded-2xl bg-gold py-4 text-[14px] font-extrabold text-noir transition hover:bg-goldsoft">
+              <i data-lucide="navigation" class="h-4.5 w-4.5"></i> Get directions
+            </a>
+            <a data-wa-service="General Appointment" href="#" class="flex flex-1 items-center justify-center gap-2.5 rounded-2xl border border-white/15 py-4 text-[14px] font-extrabold text-ivory transition hover:border-gold/50 hover:text-gold">
+              <i data-lucide="message-circle" class="h-4.5 w-4.5"></i> WhatsApp us
+            </a>
+          </div>
+        </div>
+
+        <div data-reveal data-delay="150" class="glass overflow-hidden rounded-[24px] p-2.5">
+          <div class="relative h-full min-h-[420px] overflow-hidden rounded-[18px]">
+            <iframe title="Map — The Game Of Fingers Salon & Academy, Shahdara, Delhi" src="https://www.google.com/maps?q=The%20Game%20Of%20Fingers%20Salon%20%26%20Academy,%201%2F7782%20Babarpur%20Main%20Rd,%20Gorakh%20Park%20East,%20Shahdara,%20Delhi%20110032&z=16&output=embed" class="map-dark absolute inset-0 h-full w-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <div class="glass pointer-events-none absolute bottom-4 left-4 flex items-center gap-3 rounded-2xl px-5 py-3.5">
+              <i data-lucide="map-pin" class="h-5 w-5 text-gold"></i>
+              <div>
+                <p class="text-[13px] font-extrabold text-ivory">The Game Of Fingers</p>
+                <p class="text-[11px] font-semibold text-mute">Gorakh Park East · Shahdara</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/[.06] bg-noir px-5 pb-10 pt-16">
+  <div class="mx-auto max-w-7xl">
+    <div class="grid gap-12 md:grid-cols-[1.3fr_.8fr_.8fr]">
       <div>
-        <div class="flex items-center gap-3">
-          <span class="w-10 h-10 rounded-xl bg-amber-400 text-[#171640] grid place-items-center font-display font-bold text-xl">α</span>
-          <span><span class="block font-display font-bold text-white">Alpha Institute</span><span class="block font-hindi text-xs text-white/50">अल्फा इंस्टीट्यूट</span></span>
-        </div>
-        <p class="mt-4 text-sm max-w-sm leading-relaxed">1/7122, Post Office Street, Shivaji Park, Shahdara, Delhi — 110032 · <a href="tel:+918076787929" class="text-amber-400 font-semibold hover:underline">080 767 87929</a></p>
-        <div class="mt-4 flex gap-2">
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10"><i data-lucide="rainbow" class="w-3.5 h-3.5 text-amber-400"></i> LGBTQ+ friendly</span>
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-full bg-white/[0.06] border border-white/10"><i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i> Women-owned</span>
+        <a href="#top" class="flex items-baseline gap-2.5">
+          <span class="font-display text-3xl font-semibold italic text-ivory">TGF</span>
+          <span class="text-[11px] font-bold tracking-[0.28em] uppercase text-mute">Salon &amp; Academy</span>
+        </a>
+        <p class="mt-4 max-w-sm text-[14px] leading-relaxed text-mute">The Game Of Fingers — थे गेम ऑफ़ फ़िंगर्स. A 4.9-rated unisex salon and training academy on Babarpur Main Road, Shahdara. Hair, skin, nails and everything in between, played at the highest level.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="https://www.instagram.com/tgfsalonandacademy" target="_blank" rel="noopener" aria-label="Instagram" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-mute transition hover:border-gold/50 hover:text-gold"><i data-lucide="instagram" class="h-4.5 w-4.5"></i></a>
+          <a href="tel:+919050824008" aria-label="Call" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-mute transition hover:border-gold/50 hover:text-gold"><i data-lucide="phone" class="h-4.5 w-4.5"></i></a>
+          <a data-wa-service="General Appointment" href="#" aria-label="WhatsApp" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-mute transition hover:border-gold/50 hover:text-gold"><i data-lucide="message-circle" class="h-4.5 w-4.5"></i></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=The+Game+Of+Fingers+Salon+%26+Academy+Shahdara+Delhi" target="_blank" rel="noopener" aria-label="Google Maps" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-mute transition hover:border-gold/50 hover:text-gold"><i data-lucide="map-pin" class="h-4.5 w-4.5"></i></a>
         </div>
       </div>
-      <div class="text-sm space-y-2">
-        <p class="font-display font-semibold text-white mb-3">Quick links</p>
-        <a href="#programs" class="block hover:text-amber-400 transition-colors">Programs &amp; batches</a>
-        <a href="#praise" class="block hover:text-amber-400 transition-colors">What students praise</a>
-        <a href="#reviews" class="block hover:text-amber-400 transition-colors">Google reviews</a>
-        <a href="#visit" class="block hover:text-amber-400 transition-colors">Visit &amp; directions</a>
+      <div>
+        <p class="text-[11px] font-extrabold tracking-[0.24em] uppercase text-gold">Explore</p>
+        <ul class="mt-5 space-y-3 text-[14px] font-semibold text-mute">
+          <li><a href="#services" class="transition hover:text-gold">Signature Services</a></li>
+          <li><a href="#why" class="transition hover:text-gold">Why TGF</a></li>
+          <li><a href="#reviews" class="transition hover:text-gold">Client Reviews</a></li>
+          <li><a href="#visit" class="transition hover:text-gold">Visit the Studio</a></li>
+        </ul>
       </div>
-      <div class="text-sm space-y-2 max-w-xs">
-        <p class="font-display font-semibold text-white mb-3">Accuracy note</p>
-        <p class="text-xs leading-relaxed text-white/45">All details on this page — rating, review counts, quotes, address, hours, phone and attributes — are sourced from Alpha Institute’s public Google Business profile. For the latest batches, fees &amp; timings, please call the institute directly.</p>
+      <div>
+        <p class="text-[11px] font-extrabold tracking-[0.24em] uppercase text-gold">Popular this week</p>
+        <ul class="mt-5 space-y-3 text-[14px] font-semibold text-mute">
+          <li><a data-wa-service="Nanoplastia Treatment" href="#" class="transition hover:text-gold">Nanoplastia Treatment</a></li>
+          <li><a data-wa-service="Hair Botox Treatment" href="#" class="transition hover:text-gold">Hair Botox</a></li>
+          <li><a data-wa-service="Balayage / Hair Colour" href="#" class="transition hover:text-gold">Balayage &amp; Colour</a></li>
+          <li><a data-wa-service="Academy Course Enquiry" href="#" class="transition hover:text-gold">Academy Admissions</a></li>
+        </ul>
       </div>
     </div>
-    <div class="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-white/35">
-      <p>© <span id="year"></span> Alpha Institute, Shahdara, Delhi. Replies as “AIEC Team”.</p>
-      <p class="flex items-center gap-1.5"><i data-lucide="star" class="w-3.5 h-3.5 text-amber-400 star-filled"></i> 4.9 · 125 Google reviews · Plus code M7PP+6F Delhi</p>
+    <div class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/[.07] pt-7 text-[12px] font-semibold text-mute sm:flex-row">
+      <p>© <span id="year">2025</span> The Game Of Fingers Salon &amp; Academy · Shahdara, New Delhi</p>
+      <a href="#top" class="flex items-center gap-1.5 transition hover:text-gold">Back to top <i data-lucide="arrow-up" class="h-3.5 w-3.5"></i></a>
     </div>
   </div>
 </footer>
 
-<!-- ══════════════ FLOATING ENQUIRE BUTTON ══════════════ -->
-<button id="fabBtn" onclick="openModal()" aria-label="Enquire now" class="fixed bottom-5 right-5 sm:bottom-7 sm:right-7 z-40 inline-flex items-center gap-2.5 pl-4 pr-6 py-4 rounded-full bg-[#2f2ab8] text-white font-display font-bold shadow-2xl shadow-indigo-900/40 pulse-ring hover:bg-[#1d1b6e] hover:scale-105 transition-all">
-  <i data-lucide="message-circle-more" class="w-6 h-6 text-amber-400"></i>
-  <span class="hidden sm:inline">Enquire Now</span>
-</button>
-
-<!-- ══════════════ ENQUIRY MODAL (pure JS) ══════════════ -->
-<div id="enquiryModal" inert class="modal-hidden fixed inset-0 z-50 grid place-items-center p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div id="modalBackdrop" class="absolute inset-0 bg-[#14122e]/70 backdrop-blur-sm" onclick="closeModal()"></div>
-  <div id="modalCard" class="relative w-full max-w-md rounded-[1.75rem] bg-[#fbfaf4] border border-indigo-950/10 shadow-2xl overflow-hidden">
-    <div class="bg-[#1d1b6e] grid-bg-dark px-7 py-6 text-white relative">
-      <button onclick="closeModal()" aria-label="Close" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/25 grid place-items-center transition-colors"><i data-lucide="x" class="w-4.5 h-4.5"></i></button>
-      <p class="text-amber-400 text-xs font-bold uppercase tracking-widest flex items-center gap-1.5"><i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Admission enquiry</p>
-      <h3 id="modalTitle" class="font-display font-bold text-2xl mt-1.5">Alpha Institute, Shahdara</h3>
-      <p class="text-white/55 text-sm mt-1">Opens a WhatsApp chat with the institute on submit.</p>
-    </div>
-    <form id="enquiryForm" class="p-7 space-y-4" novalidate>
-      <div>
-        <label for="fName" class="block text-sm font-semibold mb-1.5">Your name</label>
-        <div class="relative">
-          <i data-lucide="user-round" class="w-4.5 h-4.5 absolute left-4 top-1/2 -translate-y-1/2 text-indigo-950/35 pointer-events-none"></i>
-          <input id="fName" type="text" required placeholder="e.g. Aarav Sharma" class="w-full rounded-xl border-2 border-indigo-950/10 bg-white pl-11 pr-4 py-3 text-sm outline-none focus:border-indigo-600 transition-colors" />
-        </div>
-      </div>
-      <div>
-        <label for="fCourse" class="block text-sm font-semibold mb-1.5">Program interested in</label>
-        <div class="relative">
-          <i data-lucide="book-open" class="w-4.5 h-4.5 absolute left-4 top-1/2 -translate-y-1/2 text-indigo-950/35 pointer-events-none"></i>
-          <select id="fCourse" required class="w-full appearance-none rounded-xl border-2 border-indigo-950/10 bg-white pl-11 pr-10 py-3 text-sm outline-none focus:border-indigo-600 transition-colors">
-            <option value="" disabled selected>Choose a program</option>
-            <option>Academic Subject Coaching</option>
-            <option>Weekly Test Series</option>
-            <option>Career Guidance &amp; Counselling</option>
-            <option>Long-Term Program (1–2 Years)</option>
-            <option>Not sure yet — need advice</option>
-          </select>
-          <i data-lucide="chevron-down" class="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 text-indigo-950/35 pointer-events-none"></i>
-        </div>
-      </div>
-      <div>
-        <label for="fPhone" class="block text-sm font-semibold mb-1.5">Phone / WhatsApp number</label>
-        <div class="relative">
-          <i data-lucide="phone" class="w-4.5 h-4.5 absolute left-4 top-1/2 -translate-y-1/2 text-indigo-950/35 pointer-events-none"></i>
-          <input id="fPhone" type="tel" required inputmode="tel" pattern="[0-9+ ]{10,15}" placeholder="10-digit mobile number" class="w-full rounded-xl border-2 border-indigo-950/10 bg-white pl-11 pr-4 py-3 text-sm outline-none focus:border-indigo-600 transition-colors" />
-        </div>
-        <p id="formError" class="hidden mt-2 text-xs font-semibold text-red-600 flex items-center gap-1.5"><i data-lucide="circle-alert" class="w-3.5 h-3.5"></i> Please fill all fields with a valid phone number.</p>
-      </div>
-      <button type="submit" class="w-full inline-flex justify-center items-center gap-2.5 px-6 py-4 rounded-xl bg-emerald-500 text-white font-display font-bold text-lg shadow-lg shadow-emerald-600/25 hover:bg-emerald-600 hover:-translate-y-0.5 transition-all">
-        <i data-lucide="message-circle" class="w-5 h-5"></i> Send on WhatsApp
-      </button>
-      <p class="text-center text-xs text-indigo-950/45">Prefer to talk? <a href="tel:+918076787929" class="font-semibold text-indigo-700 underline decoration-amber-400 decoration-2 underline-offset-2">Call 080 767 87929</a></p>
-    </form>
-  </div>
-</div>
+<!-- FLOATING WHATSAPP -->
+<a data-wa-service="General Appointment" href="#" aria-label="Chat on WhatsApp" class="wa-pulse fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-noir shadow-[0_16px_40px_-8px_rgba(37,211,102,.5)] transition-transform duration-300 hover:scale-110">
+  <i data-lucide="message-circle" class="h-6 w-6 text-[#062e1a]"></i>
+</a>
 
 <script>
-  /* ── Lucide (guarded so a CDN hiccup never kills page interactivity) ── */
-  const renderIcons = () => { if (window.lucide && lucide.createIcons) lucide.createIcons(); };
-  renderIcons();
+  lucide.createIcons();
 
-  /* ── Footer year ── */
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  /* ── Marquee: duplicate set for seamless loop ── */
-  const track = document.getElementById('marqueeTrack');
-  track.innerHTML += track.innerHTML;
-  renderIcons();
-
-  /* ── Hero tab switcher (pure JS) ── */
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const panels  = document.querySelectorAll('.tab-panel');
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-      panels.forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected','true');
-      document.querySelector(`.tab-panel[data-panel="${btn.dataset.tab}"]`).classList.add('active');
-    });
-  });
-
-  /* ── Reveal on scroll (with no-IO fallback so content is never stuck hidden) ── */
-  const revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window){
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    revealEls.forEach(el => io.observe(el));
-  } else {
-    revealEls.forEach(el => el.classList.add('in'));
-  }
-
-  /* ── Count-up stats ── */
-  const animateCount = el => {
-    const target = parseFloat(el.dataset.count), dec = parseInt(el.dataset.decimals);
-    const dur = 1600, start = performance.now();
-    const tick = now => {
-      const p = Math.min((now - start) / dur, 1);
-      const eased = 1 - Math.pow(1 - p, 4);
-      el.textContent = (target * eased).toFixed(dec);
-      if (p < 1) requestAnimationFrame(tick); else el.textContent = target.toFixed(dec);
-    };
-    requestAnimationFrame(tick);
+  const WA_NUMBER = "919050824008";
+  const waLink = (service) => {
+    const text = ["Hello TGF Salon & Academy!", "I would like to book: " + service, "Please share available slots and pricing."].join("\n");
+    return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(text);
   };
-  const countEls = document.querySelectorAll('.count-up');
-  if ('IntersectionObserver' in window){
-    const cio = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting){ animateCount(e.target); cio.unobserve(e.target); } });
-    }, { threshold: 0.5 });
-    countEls.forEach(el => cio.observe(el));
-  } else {
-    countEls.forEach(el => { el.textContent = parseFloat(el.dataset.count).toFixed(parseInt(el.dataset.decimals)); });
-  }
 
-  /* ── Praise row arrows ── */
-  function scrollRow(dir){
-    document.getElementById('snapRow').scrollBy({ left: dir * 340, behavior: 'smooth' });
-  }
-
-  /* ── Enquiry modal (pure JS) ── */
-  const modal = document.getElementById('enquiryModal');
-  function openModal(course){
-    if (course){
-      const sel = document.getElementById('fCourse');
-      const match = [...sel.options].find(o => o.text.trim() === course.trim());
-      if (match) sel.value = match.value || match.text;
-    }
-    modal.removeAttribute('inert');           /* re-enable interaction FIRST */
-    modal.classList.remove('modal-hidden');
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => document.getElementById('fName').focus(), 350);
-  }
-  function closeModal(){
-    modal.classList.add('modal-hidden');
-    modal.setAttribute('inert', '');          /* fully inert while hidden */
-    document.body.style.overflow = '';
-  }
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-  /* ── WhatsApp deep link on submit ── */
-  document.getElementById('enquiryForm').addEventListener('submit', e => {
-    e.preventDefault();
-    const name  = document.getElementById('fName').value.trim();
-    const course= document.getElementById('fCourse').value;
-    const phone = document.getElementById('fPhone').value.trim();
-    const err   = document.getElementById('formError');
-    if (!name || !course || !/^[0-9+ ]{10,15}$/.test(phone)){
-      err.classList.remove('hidden');
-      return;
-    }
-    err.classList.add('hidden');
-    const msg = `Hello Alpha Institute! I'm ${name}. I'm interested in: ${course}. My contact number is ${phone}. Please share admission details, batch timings and fees.`;
-    window.open('https://wa.me/918076787929?text=' + encodeURIComponent(msg), '_blank');
-    closeModal();
+  document.querySelectorAll("[data-wa-service]").forEach((el) => {
+    el.setAttribute("href", waLink(el.getAttribute("data-wa-service")));
+    el.setAttribute("target", "_blank");
+    el.setAttribute("rel", "noopener");
   });
 
-  /* ── Header shadow on scroll ── */
-  const header = document.getElementById('siteHeader');
-  addEventListener('scroll', () => {
-    header.classList.toggle('shadow-lg', scrollY > 24);
-    header.classList.toggle('shadow-indigo-950/10', scrollY > 24);
-  }, { passive: true });
+  const form = document.getElementById("bookingForm");
+  const submitLabel = document.getElementById("submitLabel");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = document.getElementById("fName").value.trim();
+    const phone = document.getElementById("fPhone").value.trim();
+    const service = document.getElementById("fService").value;
+    const time = document.getElementById("fTime").value;
+    if (!name || !phone || !service) { form.reportValidity(); return; }
+    const lines = [
+      "Hello TGF Salon & Academy!",
+      "I would like to book an appointment.",
+      "",
+      "Name: " + name,
+      "Phone: " + phone,
+      "Service: " + service
+    ];
+    if (time) lines.push("Preferred time: " + time);
+    lines.push("", "Location: Shahdara studio");
+    window.open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(lines.join("\n")), "_blank", "noopener");
+    submitLabel.textContent = "Opening WhatsApp…";
+    setTimeout(() => {
+      submitLabel.textContent = "Request sent — see you soon";
+      form.reset();
+      setTimeout(() => { submitLabel.textContent = "Continue on WhatsApp"; }, 3200);
+    }, 900);
+  });
+
+  const nav = document.getElementById("siteNav");
+  const onScroll = () => {
+    const y = window.scrollY > 24;
+    nav.classList.toggle("bg-noir/80", y);
+    nav.classList.toggle("backdrop-blur-xl", y);
+    nav.classList.toggle("border-white/10", y);
+    nav.classList.toggle("border-transparent", !y);
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  let menuOpen = false;
+  const setMenu = (open) => {
+    menuOpen = open;
+    mobileMenu.classList.toggle("opacity-0", !open);
+    mobileMenu.classList.toggle("scale-y-95", !open);
+    mobileMenu.classList.toggle("pointer-events-none", !open);
+    menuBtn.innerHTML = '<i data-lucide="' + (open ? "x" : "menu") + '" class="h-5 w-5"></i>';
+    lucide.createIcons();
+  };
+  menuBtn.addEventListener("click", () => setMenu(!menuOpen));
+  document.querySelectorAll(".mob-link").forEach((l) => l.addEventListener("click", () => setMenu(false)));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        el.style.transitionDelay = (el.getAttribute("data-delay") || 0) + "ms";
+        el.classList.add("revealed");
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  document.querySelectorAll("[data-reveal]").forEach((el) => observer.observe(el));
+
+  const updateOpenStatus = () => {
+    const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
+    const mins = now.getHours() * 60 + now.getMinutes();
+    const open = mins >= 600 && mins < 1290;
+    document.querySelectorAll("[data-open-status]").forEach((el) => {
+      el.textContent = open ? "Open now · Closes 9:30 PM" : "Closed · Opens 10:00 AM";
+    });
+    document.querySelectorAll("[data-open-dot]").forEach((el) => {
+      el.className = el.className.replace(/bg-(emerald|rose)-\d+/g, "").trim();
+      el.classList.add(open ? "bg-emerald-400" : "bg-rose-400");
+      if (open) { el.classList.add("animate-pulse"); }
+    });
+  };
+  updateOpenStatus();
+  setInterval(updateOpenStatus, 60000);
+
+  const copyBtn = document.getElementById("copyPlus");
+  copyBtn.addEventListener("click", () => {
+    const done = () => {
+      const hint = document.getElementById("copyHint");
+      hint.classList.remove("opacity-0");
+      setTimeout(() => hint.classList.add("opacity-0"), 1600);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText("M7MM+Q8 Delhi").then(done).catch(done);
+    } else { done(); }
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const glow = document.getElementById("glowCursor");
+  if (window.matchMedia("(hover: hover) and (prefers-reduced-motion: no-preference)").matches) {
+    let gx = innerWidth / 2, gy = innerHeight / 2, tx = gx, ty = gy;
+    addEventListener("pointermove", (e) => { tx = e.clientX; ty = e.clientY; }, { passive: true });
+    const loop = () => {
+      gx += (tx - gx) * 0.08; gy += (ty - gy) * 0.08;
+      glow.style.transform = "translate(" + (gx - 280) + "px," + (gy - 280) + "px)";
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
+  } else {
+    glow.remove();
+  }
 </script>
+
 </body>
 </html>
